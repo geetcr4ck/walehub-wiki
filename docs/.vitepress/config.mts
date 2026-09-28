@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 const siteUrl = 'https://walehub-wiki.pages.dev/'
 const siteTitle = 'WaleHub Wiki | Wiki rumah kumpul Discord'
 const siteDescription =
-  'Rumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.'
+  'WaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.'
 const ogImage = 'https://walehub-wiki.pages.dev/images/walehub.webp'
 
 // Discord component embed (Components V2, inline JSON < 3000 bytes).
@@ -20,7 +20,7 @@ const discordComponentEmbed = {
           {
             type: 10,
             content:
-              '# WaleHub Wiki\nRumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.'
+              '# WaleHub Wiki\nWaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.'
           }
         ],
         accessory: {
@@ -62,7 +62,7 @@ const discordComponentEmbed = {
 export default defineConfig({
   lang: 'id-ID',
   title: 'WaleHub Wiki',
-  description: 'Rumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.',
+  description: 'WaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.',
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/images/walehub.webp', type: 'image/webp' }],
