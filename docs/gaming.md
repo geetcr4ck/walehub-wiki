@@ -21,6 +21,12 @@ Daftar ini dikumpulkan dari obrolan channel, cocok untuk spek kentang sampai men
 
 Punya rekomendasi lain? Tulis di channel gaming dengan format: judul, platform, kenapa seru dimainkan bareng.
 
+## Peta dan referensi game
+
+Kalau nyasar di dungeon atau cari item rahasia, peta buatan pemain biasanya lebih lengkap dari peta bawaan game:
+
+- [VGMaps](https://vgmaps.de/) - arsip peta game lama dan baru buat cek jalur, lokasi rahasia, atau nostalgia.
+
 ## Tips main bareng yang rapi
 
 Pakai voice channel sesuai game, jangan campur dua game dalam satu voice. Kecilkan noise dengan push-to-talk atau noise suppression bawaan Discord.

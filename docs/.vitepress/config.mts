@@ -14,7 +14,8 @@ export default defineConfig({
       { text: 'Beranda', link: '/' },
       { text: 'Panduan Pemula', link: '/beginners-guide' },
       { text: 'Gaming', link: '/gaming' },
-      { text: 'Tech', link: '/tech' }
+      { text: 'Tech', link: '/tech' },
+      { text: 'Tools', link: '/tools' }
     ],
 
     sidebar: [
@@ -29,7 +30,8 @@ export default defineConfig({
         text: 'Kumpul',
         items: [
           { text: 'Gaming', link: '/gaming' },
-          { text: 'Tech', link: '/tech' }
+          { text: 'Tech', link: '/tech' },
+          { text: 'Tools', link: '/tools' }
         ]
       }
     ],

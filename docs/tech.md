@@ -38,6 +38,14 @@ Beberapa tools gratis yang rutin direkomendasikan di channel:
 
 Tulis kebutuhan dan sistem operasi saat minta rekomendasi tools. Contoh: "butuh perekam layar ringan untuk laptop Windows RAM 8 GB."
 
+## Browser, keyboard, dan keamanan
+
+Link pilihan yang nyambung sama obrolan oprek dan privasi di channel:
+
+- [Browserpedia](https://browserpedia.com/) - tabel perbandingan browser soal fitur, privasi, dan mesin yang dipakai.
+- [WMKeyboard](https://github.com/wasi-master/wmkeyboard) - keyboard Android open source yang fokus privasi, tanpa telemetri bawaan.
+- [CTI Handbook](https://www.shenouda.nl/cti-handbook/) - panduan gratis soal OSINT dan threat intel dari dasar sampai cari kerja di bidangnya.
+
 ## Cara tanya yang cepat dijawab
 
 Pakai format ini biar langsung dibantu: perangkat dan OS, apa yang sudah dicoba, pesan error persis, dan tangkapan layar. Satu pesan lengkap lebih baik dari lima pesan pendek.
