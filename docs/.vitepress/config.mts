@@ -12,7 +12,7 @@ const ogImage = 'https://walehub-wiki.pages.dev/images/walehub.webp'
 const discordComponentEmbed = {
   component: {
     type: 17,
-    accent_color: 5793266,
+    accent_color: 15844367,
     components: [
       {
         type: 9,
@@ -20,7 +20,7 @@ const discordComponentEmbed = {
           {
             type: 10,
             content:
-              '# WaleHub Wiki\nRumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.\n\n[Panduan Pemula](https://walehub-wiki.pages.dev/beginners-guide) · [Gaming](https://walehub-wiki.pages.dev/gaming) · [Tech](https://walehub-wiki.pages.dev/tech)'
+              '# WaleHub Wiki\nRumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.'
           }
         ],
         accessory: {
@@ -38,20 +38,20 @@ const discordComponentEmbed = {
           {
             type: 2,
             style: 5,
-            label: 'Panduan Pemula',
-            url: 'https://walehub-wiki.pages.dev/beginners-guide'
+            label: 'Buka Wiki',
+            url: 'https://walehub-wiki.pages.dev'
           },
           {
             type: 2,
             style: 5,
-            label: 'Gaming',
-            url: 'https://walehub-wiki.pages.dev/gaming'
+            label: 'Berkontribusi',
+            url: 'https://github.com/geetcr4ck/walehub-wiki/blob/main/CONTRIBUTING.md'
           },
           {
             type: 2,
             style: 5,
-            label: 'Gabung Discord',
-            url: 'https://discord.gg/walehub'
+            label: 'Discord',
+            url: 'https://dsc.gg/walehub'
           }
         ]
       }
@@ -68,7 +68,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/images/walehub.webp', type: 'image/webp' }],
     ['link', { rel: 'canonical', href: siteUrl }],
     ['meta', { name: 'description', content: siteDescription }],
-    ['meta', { name: 'theme-color', content: '#5865F2' }],
+    ['meta', { name: 'theme-color', content: '#f1c40f' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'id_ID' }],
     ['meta', { property: 'og:site_name', content: 'WaleHub Wiki' }],
