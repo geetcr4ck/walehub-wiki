@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'WaleHub Wiki',
   description: 'Rumah kumpul Discord WaleHub: panduan, gaming, dan tech dalam bahasa santai.',
   cleanUrls: true,
+  head: [['link', { rel: 'icon', href: '/images/walehub.webp', type: 'image/webp' }]],
 
   themeConfig: {
     siteTitle: 'WaleHub Wiki',
