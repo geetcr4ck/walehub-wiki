@@ -8,7 +8,7 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: 'WaleHub Wiki',
-    logo: '/logo.svg',
+    logo: '/images/walehub.webp',
 
     nav: [
       { text: 'Beranda', link: '/' },
