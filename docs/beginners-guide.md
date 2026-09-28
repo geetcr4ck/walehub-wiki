@@ -1,12 +1,12 @@
 # Panduan Pemula
 
-Selamat datang di WaleHub. Wale artinya rumah dalam bahasa Minahasa, jadi anggap wiki ini papan pengumuman di ruang tamu. Halaman ini menjelaskan cara mulai ngobrol di Discord tanpa bingung.
+Selamat datang di Walehub. Wale artinya rumah dalam bahasa Minahasa, jadi anggap wiki ini papan pengumuman di ruang tamu. Halaman ini menjelaskan cara mulai ngobrol di Discord tanpa bingung.
 
 Kalau kamu baru join, santai saja. Baca aturan channel, sapa satu dua orang, lalu ikut topik yang kamu suka. Tidak perlu langsung aktif di semua channel.
 
 ## Kenalan sama server
 
-Server WaleHub punya beberapa channel utama: obrolan santai, info acara, gaming, dan tech. Setiap channel punya deskripsi di bagian atas, baca dulu sebelum kirim pesan.
+Server Walehub punya beberapa channel utama: obrolan santai, info acara, gaming, dan tech. Setiap channel punya deskripsi di bagian atas, baca dulu sebelum kirim pesan.
 
 Struktur sederhananya begini:
 

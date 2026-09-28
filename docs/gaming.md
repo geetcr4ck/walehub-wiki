@@ -1,6 +1,6 @@
 # Gaming
 
-Channel gaming adalah tempat paling ramai di WaleHub. Di sini kita atur jadwal mabar, tukar rekomendasi game, dan bahas setting biar main bareng tetap nyaman.
+Channel gaming adalah tempat paling ramai di Walehub. Di sini kita atur jadwal mabar, tukar rekomendasi game, dan bahas setting biar main bareng tetap nyaman.
 
 Jadwal rutin diumumkan tiap awal minggu di channel info. Kalau jadwal tidak cocok, ajukan saja jam baru di thread, biasanya ada yang ikut.
 

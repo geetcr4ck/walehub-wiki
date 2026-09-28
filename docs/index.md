@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: WaleHub
+  name: Walehub
   text: Wiki rumah kumpul Discord
   tagline: Catatan bareng soal main game, oprek tech, dan kenalan sama penghuni wale.
   actions:

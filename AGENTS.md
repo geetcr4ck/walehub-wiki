@@ -1,6 +1,6 @@
-# AGENTS.md — WaleHub Wiki
+# AGENTS.md — Walehub Wiki
 
-> Wiki / knowledge base untuk Discord server **WaleHub** (`Wale` = rumah - Minahasa, `Hub` = pusat kumpul).
+> Wiki / knowledge base untuk Discord server **Walehub** (`Wale` = rumah - Minahasa, `Hub` = pusat kumpul).
 
 ## Stack
 

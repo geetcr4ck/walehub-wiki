@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 const siteUrl = 'https://walehub-wiki.pages.dev/'
-const siteTitle = 'WaleHub Wiki | Wiki rumah kumpul Discord'
+const siteTitle = 'Walehub Wiki | Wiki rumah kumpul Discord'
 const siteDescription =
-  'WaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.'
+  'Panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server Walehub. Terbuka untuk kontribusi dan umpan balik.'
 const ogImage = 'https://walehub-wiki.pages.dev/images/walehub.webp'
 
 // Discord component embed (Components V2, inline JSON < 3000 bytes).
@@ -20,7 +20,7 @@ const discordComponentEmbed = {
           {
             type: 10,
             content:
-              '# WaleHub Wiki\nWaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.'
+              '# Walehub Wiki\nPanduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server Walehub. Terbuka untuk kontribusi dan umpan balik.'
           }
         ],
         accessory: {
@@ -61,8 +61,8 @@ const discordComponentEmbed = {
 
 export default defineConfig({
   lang: 'id-ID',
-  title: 'WaleHub Wiki',
-  description: 'WaleHub Wiki: panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server WaleHub. Terbuka untuk kontribusi dan umpan balik.',
+  title: 'Walehub Wiki',
+  description: 'Panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server Walehub. Terbuka untuk kontribusi dan umpan balik.',
   cleanUrls: true,
   head: [
     ['link', { rel: 'icon', href: '/images/walehub.webp', type: 'image/webp' }],
@@ -71,14 +71,14 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#f1c40f' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'id_ID' }],
-    ['meta', { property: 'og:site_name', content: 'WaleHub Wiki' }],
+    ['meta', { property: 'og:site_name', content: 'Walehub Wiki' }],
     ['meta', { property: 'og:title', content: siteTitle }],
     ['meta', { property: 'og:description', content: siteDescription }],
     ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { property: 'og:image', content: ogImage }],
     ['meta', { property: 'og:image:width', content: '2048' }],
     ['meta', { property: 'og:image:height', content: '2048' }],
-    ['meta', { property: 'og:image:alt', content: 'Logo WaleHub Wiki' }],
+    ['meta', { property: 'og:image:alt', content: 'Logo Walehub Wiki' }],
     ['meta', { property: 'og:image:type', content: 'image/webp' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: siteTitle }],
@@ -92,7 +92,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: 'WaleHub Wiki',
+    siteTitle: 'Walehub Wiki',
     logo: '/images/walehub.webp',
 
     nav: [
@@ -149,8 +149,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'WaleHub Wiki: wale berarti rumah, hub berarti tempat kumpul.',
-      copyright: 'Konten komunitas WaleHub, bebas dibaca dan diperbaiki.'
+      message: 'Walehub Wiki: wale berarti rumah, hub berarti tempat kumpul.',
+      copyright: 'Konten komunitas Walehub, bebas dibaca dan diperbaiki.'
     }
   }
 })
