@@ -176,7 +176,7 @@ function parseDiff(diffText) {
 function buildPayload(links, { eventName, newSha, timestamp }) {
   const n = links.length;
   const isPush = eventName === 'push';
-  const title = isPush ? `<:info:1553960874803462194> ${n} link baru di wiki` : `<:info:1553960874803462194> ${n} link baru (rekap 1 jam)`;
+  const title = isPush ? `<:addlink:1554438378429227140> ${n} link baru di wiki` : `<:addlink:1554438378429227140> ${n} link baru (rekap 1 jam)`;
   const shown = links.slice(0, MAX_LINKS_SHOWN);
   const lines = shown.map((l) => `- [${l.label}](<${l.url}>)`);
   const rest = n - shown.length;
@@ -198,7 +198,7 @@ function buildPayload(links, { eventName, newSha, timestamp }) {
 function buildDeletePayload(links, { eventName, newSha, timestamp }) {
   const n = links.length;
   const isPush = eventName === 'push';
-  const title = isPush ? `<:info:1553960874803462194> ${n} link dihapus dari wiki` : `<:info:1553960874803462194> ${n} link dihapus (rekap 1 jam)`;
+  const title = isPush ? `<:deletelink:1554438382505959514> ${n} link dihapus dari wiki` : `<:deletelink:1554438382505959514> ${n} link dihapus (rekap 1 jam)`;
   const shown = links.slice(0, MAX_LINKS_SHOWN);
   const lines = shown.map((l) => `- [${l.label}](<${l.url}>)`);
   const rest = n - shown.length;
@@ -258,14 +258,14 @@ async function runTestMode() {
   const payload = {
     embeds: [
       {
-        title: '<:info:1553960874803462194> Test mode',
+        title: '<:addlink:1554438378429227140> Test mode',
         description: '- [Test Dummy](<https://example.com/test-mode-dummy>)',
         color: COLOR,
         timestamp: new Date().toISOString(),
         footer: { text: 'walehub-wiki • test' },
       },
       {
-        title: '<:info:1553960874803462194> 1 link dihapus (test)',
+        title: '<:deletelink:1554438382505959514> 1 link dihapus (test)',
         description: '- [Test Dummy Dihapus](<https://example.com/test-mode-dummy>)',
         color: DELETE_COLOR,
         timestamp: new Date().toISOString(),
