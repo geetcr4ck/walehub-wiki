@@ -97,7 +97,6 @@ export default defineConfig({
 
     nav: [
       { text: 'Beranda', link: '/' },
-      { text: 'Panduan Pemula', link: '/beginners-guide' },
       { text: 'Tools', link: '/tools' },
       { text: 'AI', link: '/ai' },
       { text: 'Ikut Nulis', link: '/ikut-nulis' }
@@ -108,7 +107,6 @@ export default defineConfig({
         text: 'Mulai di sini',
         items: [
           { text: 'Beranda', link: '/' },
-          { text: 'Panduan Pemula', link: '/beginners-guide' },
           { text: 'Ikut Nulis', link: '/ikut-nulis' }
         ]
       },

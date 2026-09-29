@@ -9,9 +9,6 @@ hero:
     src: /images/walehub-transparent.webp
     alt: Logo Walehub Wiki
   actions:
-    - theme: brand
-      text: Mulai dari Panduan Pemula
-      link: /beginners-guide
     - theme: alt
       text: Lihat Daftar Tools
       link: /tools
@@ -20,9 +17,6 @@ hero:
       link: /ikut-nulis
 
 features:
-  - title: "Ruang Tamu: Panduan Pemula"
-    details: "Cara kenalan di server, aturan main yang pendek, dan arti istilah chat seperti mabar dan OT."
-    link: /beginners-guide
   - title: "Laci Perkakas: Tools"
     details: "Perkakas web harian yang sering kepakai: unduh media, kompres file, bikin QR, sampai launcher keyboard."
     link: /tools
