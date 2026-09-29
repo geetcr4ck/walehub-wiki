@@ -33,7 +33,6 @@ const WIKI_BUTTON = [
         style: 5,
         label: 'Buka Walehub Wiki',
         url: 'https://walehub-wiki.pages.dev/',
-        emoji: { name: 'click', id: '1553966843688124477' },
       },
     ],
   },
