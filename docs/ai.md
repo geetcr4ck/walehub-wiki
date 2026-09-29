@@ -142,3 +142,11 @@ Kumpulan tool AI yang kepakai bareng: chatbot gratis, setup ringan, dan trik bia
 - [Vocali.se](https://vocali.se/en) - separasi vokal dan instrumental web yang gampang dipakai.
 - [Mazmazika](https://www.mazmazika.com/) - separasi trek musik web buat bikin karaoke dan latihan.
 - [Ezstems](https://ezstems.com/) - pemisah stem lagu web yang praktis buat remix dan sampling.
+
+## AI Agents
+
+> Catatan: banyak agent jalan dengan akses root dan bisa ubah file plus eksekusi perintah tanpa izin, jadi jangan kasih akses full drive dan idealnya jalan di container, VPS, atau VM.
+
+- [Hermes Agent](https://hermes-agent.nousresearch.com/) ([Docs](https://hermes-agent.nousresearch.com/docs)) - general purpose agent buat eksekusi tugas otomatis, baca dulu docsnya biar setupnya aman.
+- [OpenClaw](https://openclaw.ai/) ([Docs](https://docs.openclaw.ai/)) - general purpose agent open source yang bisa integrasi banyak tool, jalanin di sandbox biar aman.
+- [Goose](https://goose-docs.ai/) - general purpose agent lokal yang ringan buat otomasi tugas coding dan harian.
