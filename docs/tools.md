@@ -19,6 +19,10 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [Anikage](https://anikage.cc/) - situs streaming anime gratis buat nonton online, lengkap dengan trending, rilisan musiman, dan film.
 
+## Karier & CV
+
+- [Resume Matcher](https://resumematcher.fyi/) ([GitHub](https://github.com/srbhr/Resume-Matcher)) - tool open-source buat tailoring CV, cover letter, dan persiapan interview dari job desc lengkap dengan skor ATS dan export PDF.
+
 ## QR dan utilitas
 
 - [Midas QR](https://midasqr.is-local.org/) ([GitHub](https://github.com/Jimm144/midas-qr)) - bikin QR code yang bisa diatur warna dan gaya, cocok buat link atau info WiFi.
