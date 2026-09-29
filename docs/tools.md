@@ -15,6 +15,10 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [DOF Simulator](https://dofsimulator.net/) - simulator web buat hitung depth of field dan preview bokeh real-time dari kombinasi kamera, lensa, aperture, dan jarak subjek.
 
+## Streaming
+
+- [Anikage](https://anikage.cc/) - situs streaming anime gratis buat nonton online, lengkap dengan trending, rilisan musiman, dan film.
+
 ## QR dan utilitas
 
 - [Midas QR](https://midasqr.is-local.org/) ([GitHub](https://github.com/Jimm144/midas-qr)) - bikin QR code yang bisa diatur warna dan gaya, cocok buat link atau info WiFi.
