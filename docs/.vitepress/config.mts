@@ -100,7 +100,8 @@ export default defineConfig({
       { text: 'Panduan Pemula', link: '/beginners-guide' },
       { text: 'Gaming', link: '/gaming' },
       { text: 'Tech', link: '/tech' },
-      { text: 'Tools', link: '/tools' }
+      { text: 'Tools', link: '/tools' },
+      { text: 'AI', link: '/ai' }
     ],
 
     sidebar: [
@@ -116,7 +117,8 @@ export default defineConfig({
         items: [
           { text: 'Gaming', link: '/gaming' },
           { text: 'Tech', link: '/tech' },
-          { text: 'Tools', link: '/tools' }
+          { text: 'Tools', link: '/tools' },
+          { text: 'AI', link: '/ai' }
         ]
       }
     ],
