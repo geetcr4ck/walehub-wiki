@@ -120,18 +120,20 @@ function cleanBareUrl(u) {
 }
 
 function collectLinks(body, map, file) {
-  const mdUrls = new Set();
+  // 1 link pertama per baris: markdown dulu, fallback satu bare URL.
+  // Match ke-2 dst di baris yang sama diabaikan (mis. ([GitHub](...)) kedua).
   for (const m of body.matchAll(MD_RE)) {
     const label = m[1].trim().slice(0, 120) || m[2];
     const url = m[2].trim();
-    if (url.startsWith('/')) continue;
-    mdUrls.add(url);
+    if (url.startsWith('/')) return;
     if (!map.has(url)) map.set(url, { label, file });
+    return;
   }
   for (const m of body.matchAll(BARE_RE)) {
     const url = cleanBareUrl(m[0]);
-    if (!url || url.startsWith('/') || mdUrls.has(url)) continue;
+    if (!url || url.startsWith('/')) return;
     if (!map.has(url)) map.set(url, { label: url, file });
+    return;
   }
 }
 
