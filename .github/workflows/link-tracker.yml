@@ -7,6 +7,12 @@ on:
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Kirim embed dummy tanpa diff (uji webhook)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -32,6 +38,7 @@ jobs:
         run: node .github/scripts/notify-links.cjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TEST_MODE: ${{ inputs.test_mode }}
 
       - name: Save last SHA
         if: always()

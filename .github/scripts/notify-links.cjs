@@ -11,7 +11,9 @@
  * - Embed: color 0x5865F2, timestamp `git log -1 --format=%cI`, footer short-SHA,
  *   retry 429, update LAST_SHA setelah sukses.
  *
- * Env: GH_TOKEN (untuk `gh variable`), DISCORD_WEBHOOK_URL, GITHUB_* (CI).
+ * Env: GH_TOKEN (untuk `gh variable`), DISCORD_WEBHOOK_URL, GITHUB_* (CI),
+ *   TEST_MODE=true (dari workflow_dispatch input test_mode) → kirim 1 embed
+ *   dummy tanpa diff, exit 0 tanpa update LAST_SHA.
  */
 
 const { execFileSync } = require('node:child_process');
@@ -191,7 +193,43 @@ async function postWebhook(url, payload, maxRetries = 4) {
   }
 }
 
+function isTestMode() {
+  const v = process.env.TEST_MODE ?? process.env.INPUT_TEST_MODE ?? '';
+  return String(v).toLowerCase() === 'true';
+}
+
+async function runTestMode() {
+  console.log('test_mode=true: kirim embed dummy tanpa diff');
+  const webhook = process.env.DISCORD_WEBHOOK_URL || '';
+  const payload = {
+    embeds: [
+      {
+        title: '🧪 Test mode',
+        description: '- [Test Dummy](<https://example.com/test-mode-dummy>)',
+        color: COLOR,
+        timestamp: new Date().toISOString(),
+        footer: { text: 'walehub-wiki • test' },
+      },
+    ],
+  };
+  if (!webhook) {
+    console.log('warn: DISCORD_WEBHOOK_URL kosong, webhook dilewati');
+    console.log(JSON.stringify(payload, null, 2));
+    return;
+  }
+  const { status, body } = await postWebhook(webhook, payload);
+  console.log(`discord status: ${status} ${body}`);
+  if (status < 200 || status >= 300) {
+    process.exitCode = 1;
+  }
+  // Sengaja tanpa update LAST_SHA.
+}
+
 async function main() {
+  if (isTestMode()) {
+    await runTestMode();
+    return;
+  }
   const { oldSha, newSha, eventName } = determineRange();
   console.log(`range: ${oldSha.slice(0, 7)}..${newSha.slice(0, 7)} (event=${eventName || 'local'})`);
 
