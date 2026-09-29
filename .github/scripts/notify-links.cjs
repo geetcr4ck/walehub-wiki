@@ -6,10 +6,14 @@
  *   push     → github.event.before / .after via $GITHUB_EVENT_PATH
  *   schedule → `gh variable get LAST_SHA`, fallback HEAD~1
  * - Diff: git diff -U0 OLD NEW -- 'docs/*.md' ':(exclude)docs/.vitepress/**'
- * - Added lines only (`+` bukan `+++`), regex md + bare URL, dedupe,
- *   skip internal `/...`, silent jika 0 link.
- * - Embed: color 0x5865F2, timestamp `git log -1 --format=%cI`, footer short-SHA,
- *   retry 429, update LAST_SHA setelah sukses.
+ * - Baris tambah (`+` bukan `+++`) → link baru; baris hapus (`-` bukan `---`)
+ *   → link dihapus. Keduanya pakai regex md + bare URL yang sama, dedupe,
+ *   skip internal `/...`, track file dari `+++ b/` / `--- a/`.
+ *   Silent (tanpa spam) jika masing-masing 0.
+ * - Embed tambah: color 0x3179EE. Embed hapus (terpisah): color merah 0xED4245,
+ *   timestamp + footer sama seperti embed tambah. Timestamp dari
+ *   `git log -1 --format=%cI`, footer short-SHA, retry 429,
+ *   update LAST_SHA setelah sukses.
  *
  * Env: GH_TOKEN (untuk `gh variable`), DISCORD_WEBHOOK_URL, GITHUB_* (CI),
  *   TEST_MODE=true (dari workflow_dispatch input test_mode) → kirim 1 embed
@@ -20,6 +24,7 @@ const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 
 const COLOR = 0x3179EE;
+const DELETE_COLOR = 0xED4245;
 const MAX_LINKS_SHOWN = 20;
 const MD_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
 const BARE_RE = /(?<!\()https?:\/\/[^\s)>\]"']+/g;
@@ -114,32 +119,43 @@ function cleanBareUrl(u) {
   return u.replace(/[.,;:!?]+$/, '').replace(/["']$/, '');
 }
 
-function extractLinks(diffText) {
-  const links = new Map(); // url → label
-  let currentFile = '';
+function collectLinks(body, map, file) {
+  const mdUrls = new Set();
+  for (const m of body.matchAll(MD_RE)) {
+    const label = m[1].trim().slice(0, 120) || m[2];
+    const url = m[2].trim();
+    if (url.startsWith('/')) continue;
+    mdUrls.add(url);
+    if (!map.has(url)) map.set(url, { label, file });
+  }
+  for (const m of body.matchAll(BARE_RE)) {
+    const url = cleanBareUrl(m[0]);
+    if (!url || url.startsWith('/') || mdUrls.has(url)) continue;
+    if (!map.has(url)) map.set(url, { label: url, file });
+  }
+}
+
+function parseDiff(diffText) {
+  // Mirror: `+` (bukan `+++`) → tambah, `-` (bukan `---`) → hapus.
+  const added = new Map(); // url → { label, file }
+  const removed = new Map();
+  let fileAdd = '';
+  let fileDel = '';
   for (const line of diffText.split('\n')) {
-    if (line.startsWith('+++ b/')) {
-      currentFile = line.replace('+++ b/', '').trim();
+    if (line.startsWith('--- a/')) {
+      fileDel = line.replace('--- a/', '').trim();
       continue;
     }
-    if (!line.startsWith('+') || line.startsWith('+++')) continue;
-    const body = line.slice(1);
-
-    const mdUrls = new Set();
-    for (const m of body.matchAll(MD_RE)) {
-      const label = m[1].trim().slice(0, 120) || m[2];
-      const url = m[2].trim();
-      if (url.startsWith('/')) continue;
-      mdUrls.add(url);
-      if (!links.has(url)) links.set(url, { label, file: currentFile });
+    if (line.startsWith('+++ b/')) {
+      fileAdd = line.replace('+++ b/', '').trim();
+      continue;
     }
-    for (const m of body.matchAll(BARE_RE)) {
-      let url = cleanBareUrl(m[0]);
-      if (!url || url.startsWith('/') || mdUrls.has(url)) continue;
-      if (!links.has(url)) links.set(url, { label: url, file: currentFile });
-    }
+    if (line.startsWith('+++') || line.startsWith('---')) continue;
+    if (line.startsWith('+')) collectLinks(line.slice(1), added, fileAdd);
+    else if (line.startsWith('-')) collectLinks(line.slice(1), removed, fileDel);
   }
-  return [...links.entries()].map(([url, v]) => ({ url, ...v }));
+  const toList = (map) => [...map.entries()].map(([url, v]) => ({ url, ...v }));
+  return { added: toList(added), removed: toList(removed) };
 }
 
 function buildPayload(links, { eventName, newSha, timestamp }) {
@@ -156,6 +172,27 @@ function buildPayload(links, { eventName, newSha, timestamp }) {
         title,
         description: lines.join('\n').slice(0, 4000),
         color: COLOR,
+        timestamp,
+        footer: { text: `walehub-wiki @ ${newSha.slice(0, 7)}` },
+      },
+    ],
+  };
+}
+
+function buildDeletePayload(links, { eventName, newSha, timestamp }) {
+  const n = links.length;
+  const isPush = eventName === 'push';
+  const title = isPush ? `🗑️ ${n} link dihapus dari wiki` : `🗑️ ${n} link dihapus (rekap 1 jam)`;
+  const shown = links.slice(0, MAX_LINKS_SHOWN);
+  const lines = shown.map((l) => `- [${l.label}](<${l.url}>)`);
+  const rest = n - shown.length;
+  if (rest > 0) lines.push(`_+${rest} lainnya…_`);
+  return {
+    embeds: [
+      {
+        title,
+        description: lines.join('\n').slice(0, 4000),
+        color: DELETE_COLOR,
         timestamp,
         footer: { text: `walehub-wiki @ ${newSha.slice(0, 7)}` },
       },
@@ -210,6 +247,13 @@ async function runTestMode() {
         timestamp: new Date().toISOString(),
         footer: { text: 'walehub-wiki • test' },
       },
+      {
+        title: '🗑️ 1 link dihapus (test)',
+        description: '- [Test Dummy Dihapus](<https://example.com/test-mode-dummy>)',
+        color: DELETE_COLOR,
+        timestamp: new Date().toISOString(),
+        footer: { text: 'walehub-wiki • test' },
+      },
     ],
   };
   if (!webhook) {
@@ -246,10 +290,10 @@ async function main() {
     return;
   }
 
-  const links = extractLinks(diffText);
-  console.log(`ditemukan ${links.length} link baru`);
+  const { added, removed } = parseDiff(diffText);
+  console.log(`ditemukan ${added.length} link baru, ${removed.length} link dihapus`);
 
-  if (links.length === 0) {
+  if (added.length === 0 && removed.length === 0) {
     console.log('silent: 0 link, webhook dilewati');
     setLastShaVariable(newSha);
     return;
@@ -264,14 +308,24 @@ async function main() {
   if (!timestamp) timestamp = new Date().toISOString();
 
   const webhook = process.env.DISCORD_WEBHOOK_URL || '';
+  const embeds = [];
+  if (added.length > 0) {
+    embeds.push(...buildPayload(added, { eventName, newSha, timestamp }).embeds);
+  } else {
+    console.log('silent: 0 link baru, embed tambah dilewati');
+  }
+  if (removed.length > 0) {
+    embeds.push(...buildDeletePayload(removed, { eventName, newSha, timestamp }).embeds);
+  } else {
+    console.log('silent: 0 link dihapus, embed hapus dilewati');
+  }
   if (!webhook) {
     console.log('warn: DISCORD_WEBHOOK_URL kosong, webhook dilewati');
-    console.log(JSON.stringify(buildPayload(links, { eventName, newSha, timestamp }), null, 2));
+    console.log(JSON.stringify({ embeds }, null, 2));
     return;
   }
 
-  const payload = buildPayload(links, { eventName, newSha, timestamp });
-  const { status, body } = await postWebhook(webhook, payload);
+  const { status, body } = await postWebhook(webhook, { embeds });
   console.log(`discord status: ${status} ${body}`);
   if (status < 200 || status >= 300) {
     process.exitCode = 1;
