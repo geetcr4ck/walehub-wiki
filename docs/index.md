@@ -3,8 +3,11 @@ layout: home
 
 hero:
   name: Walehub
-  text: Wiki rumah kumpul Discord
-  tagline: Catatan bareng soal main game, oprek tech, dan kenalan sama penghuni wale.
+  text: Wiki
+  tagline: Kumpulan link pilihan member Walehub, tersimpan rapi dalam satu wiki.
+  image:
+    src: /images/walehub-base-2.webp
+    alt: Logo Walehub Wiki
   actions:
     - theme: brand
       text: Baca Panduan Pemula

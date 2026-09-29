@@ -1,0 +1,41 @@
+/* Aksen Walehub Wiki: #f1c40f (kuning). Satu aksen saja, sisanya netral bawaan VitePress. */
+
+:root {
+  /* Light mode: teks/link pakai gold gelap turunan hue yang sama agar kontras AA di atas putih. */
+  --vp-c-brand-1: #937200;
+  --vp-c-brand-2: #7a5f00;
+  --vp-c-brand-3: #665000;
+  --vp-c-brand-soft: rgba(241, 196, 15, 0.14);
+
+  /* Tombol brand: background kuning persis #f1c40f, teks gelap agar kontras. */
+  --vp-button-brand-text: #1a1a1a;
+  --vp-button-brand-bg: #f1c40f;
+  --vp-button-brand-hover-bg: #d9b00d;
+  --vp-button-brand-active-bg: #c29d0b;
+}
+
+.dark {
+  /* Dark mode: background gelap, jadi #f1c40f bisa dipakai langsung untuk teks/link. */
+  --vp-c-brand-1: #f1c40f;
+  --vp-c-brand-2: #f5cf33;
+  --vp-c-brand-3: #f7d95c;
+  --vp-c-brand-soft: rgba(241, 196, 15, 0.16);
+
+  --vp-button-brand-text: #1a1a1a;
+  --vp-button-brand-bg: #f1c40f;
+  --vp-button-brand-hover-bg: #f5cf33;
+  --vp-button-brand-active-bg: #f7d95c;
+}
+
+/* Hero: Walehub pakai aksen brand, Wiki pakai warna teks adaptif (gelap di light, terang di dark). */
+.VPHomeHero .name.clip {
+  background: none;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.VPHomeHero .text.clip {
+  background: none;
+  -webkit-text-fill-color: var(--vp-c-text-1);
+  color: var(--vp-c-text-1);
+}
