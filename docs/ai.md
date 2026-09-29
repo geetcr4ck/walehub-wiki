@@ -28,3 +28,31 @@ Kumpulan tool AI yang kepakai bareng: chatbot gratis, setup ringan, dan trik bia
 - [Sarvam](https://dashboard.sarvam.ai/chat) - chatbot India berbasis Sarvam 105B yang gratis unlimited, perlu signup, jago multibahasa.
 - [Poolside](https://chat.poolside.ai/) - chatbot berbasis Laguna S 2.1 dan Laguna XS 2.1 yang fokus ke coding dan workflow developer.
 - [Inception](https://chat.inceptionlabs.ai/) - chatbot gratis unlimited berbasis Mercury 2 yang kencang buat tanya cepat dan coding ringan.
+
+## Coding AI
+
+> Catatan: banyak coding AI jalan dengan akses root dan bisa ubah file plus eksekusi perintah terminal, jadi backup kode dulu, jangan kasih akses full drive, dan idealnya jalan di container atau VM.
+
+- [OpenCode](https://opencode.ai/) ([GitHub](https://github.com/anomalyco/opencode) / [Resources](https://github.com/awesome-opencode/awesome-opencode)) - coding AI agent berbasis Muse Spark 1.3 dan MiMo-2.5 yang jalan di terminal dan enak buat ngoding langsung di repo.
+- [Aider](https://aider.chat/) ([GitHub](https://github.com/Aider-AI/aider)) - terminal coding agent yang nyambung ke repo Git dan enak buat edit file cepat dari command line.
+- [Cline](https://cline.bot/) ([GitHub](https://github.com/cline/cline) / [Zoo Code](https://github.com/Zoo-Code-Org/Zoo-Code/)) - autonomous agent buat VS Code yang bisa baca, edit, dan jalanin perintah sendiri, alternatifnya ada Zoo Code.
+- [OpenHands](https://www.openhands.dev/) ([GitHub](https://github.com/All-Hands-AI/OpenHands)) - coding AI open source yang bisa planning, eksekusi perintah, dan beresin task software end to end.
+- [Cursor](https://rentry.co/FMHYB64#cursor) - coding AI berbasis editor yang jago autocomplete, refactor, dan ngobrol soal kode langsung di file.
+- [GitWit](https://gitwit.dev/) - coding AI ringan buat bantu nulis, review, dan rapiin kode langsung dari browser.
+- [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) - harness coding AI open source dari DeepSeek buat jalanin agent coding dengan workflow sendiri.
+- [Google Antigravity](https://antigravity.google/) ([Add Skills](https://github.com/sickn33/antigravity-awesome-skills) / [Usage Tracker](https://open-vsx.org/extension/crsx/ag-usage)) - coding AI dari Google berbasis Gemini 3 dan Claude Opus 4.6 dengan limit reset mingguan, enak buat vibe coding.
+- [AI SDK](https://ai-sdk.dev/) ([GitHub](https://github.com/vercel/ai)) - toolkit coding AI dari Vercel buat bangun aplikasi dan agent AI dengan API yang simpel.
+- [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) - local code interpreter open source yang jalan di mesin sendiri tanpa signup dan bisa eksekusi kode langsung.
+- [Code Web Chat](https://codeweb.chat/) ([GitHub](https://github.com/robertpiosik/CodeWebChat)) - coding AI yang bisa dipakai tanpa signup dan nyambung ke VS Code buat tanya dan edit kode.
+- [Supermaven](https://supermaven.com/) - tab completion coding AI yang cepat dan bisa dipakai tanpa signup, cocok buat ngebut nulis kode.
+- [Qodo](https://www.qodo.ai/) - coding AI buat bantu review, testing, dan rapiin kode biar lebih aman saat merge.
+- [OpenChamber](https://openchamber.dev/) ([GitHub](https://github.com/openchamber/openchamber)) - coding AI buat bantu ngoding, riset, dan otomasi tugas langsung dari satu tempat.
+- [ZCode](https://zcode.z.ai/) ([GitHub](https://github.com/zai-org/ZCode)) - coding AI dari Zhipu buat bantu nulis dan beresin kode langsung di workflow developer.
+- [Ampcode](https://ampcode.com/) - coding AI buat bantu nulis, refactor, dan debug kode langsung di editor.
+- [FreeBuff](https://freebuff.com/) - coding agent cloud sandbox berbasis MiMo 2.5 yang enak buat coba task coding tanpa setup lokal.
+- [jcode](https://jcode.sh/) - terminal coding agent yang ringan buat bantu nulis dan edit kode langsung dari CLI.
+- [Pi](https://pi.dev/) ([GitHub](https://github.com/earendil-works/pi)) - terminal coding agent open source yang simpel dan enak buat automasi coding ringan.
+- [omp](https://omp.sh/) ([GitHub](https://github.com/can1357/oh-my-pi)) - terminal coding agent open source yang asyik buat yang suka workflow keyboard dan CLI cepat.
+- [cmux](https://cmux.com/) ([GitHub](https://github.com/manaflow-ai/cmux)) - terminal coding agent plus emulator macOS yang cocok buat multitasking coding ala agent.
+- [Poolside](https://docs.poolside.ai/api/overview) - coding AI API buat bangun fitur dan workflow coding otomatis di aplikasi sendiri.
+- [getdesign.md](https://getdesign.md/) - kumpulan design system yang AI-ready biar hasil coding UI lebih rapi dan konsisten.
