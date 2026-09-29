@@ -1,0 +1,28 @@
+name: Link Tracker
+
+on:
+  push:
+    paths:
+      - 'docs/*.md'
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  variables: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history untuk diff)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Notify Discord link baru
+        run: node .github/scripts/notify-links.cjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
