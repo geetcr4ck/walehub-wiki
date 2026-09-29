@@ -149,7 +149,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/geetcr4ck/walehub-wiki' },
-      { icon: 'discord', link: 'https://discord.gg/walehub' }
+      { icon: 'discord', link: 'https://dsc.gg/walehub' }
     ],
 
     footer: {
