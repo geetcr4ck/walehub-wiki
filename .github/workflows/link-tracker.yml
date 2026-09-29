@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  variables: write
 
 jobs:
   notify:
@@ -21,8 +20,22 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Restore last SHA
+        uses: actions/cache/restore@v4
+        with:
+          path: .github/.last-sha
+          key: link-tracker-last-sha-${{ github.run_id }}
+          restore-keys: |
+            link-tracker-last-sha-
+
       - name: Notify Discord link baru
         run: node .github/scripts/notify-links.cjs
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Save last SHA
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .github/.last-sha
+          key: link-tracker-last-sha-${{ github.run_id }}

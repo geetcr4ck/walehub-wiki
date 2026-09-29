@@ -59,17 +59,19 @@ function resolveHead() {
 }
 
 function getLastShaVariable() {
-  // `gh variable get` butuh GH_TOKEN; gagal → throw → fallback.
-  return sh('gh', ['variable', 'get', 'LAST_SHA']);
+  // File-state via actions/cache (.github/.last-sha); gagal → throw → fallback.
+  const p = require('node:path').join(process.cwd(), '.github', '.last-sha');
+  return fs.readFileSync(p, 'utf8');
 }
 
 function setLastShaVariable(sha) {
   try {
-    execFileSync('gh', ['variable', 'set', 'LAST_SHA', '--body', sha], { stdio: 'pipe', encoding: 'utf8' });
+    const p = require('node:path').join(process.cwd(), '.github', '.last-sha');
+    fs.mkdirSync(require('node:path').dirname(p), { recursive: true });
+    fs.writeFileSync(p, `${sha}\n`);
     console.log(`LAST_SHA updated → ${sha}`);
   } catch (err) {
-    const msg = err.stderr ? String(err.stderr) : err.message;
-    console.warn(`warn: gagal update LAST_SHA: ${msg.trim().slice(0, 300)}`);
+    console.warn(`warn: gagal update LAST_SHA: ${err.message}`);
   }
 }
 
