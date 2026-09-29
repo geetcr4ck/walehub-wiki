@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Walehub
   text: Wiki
-  tagline: "Catatan bareng warga Walehub: sedikit link dan panduan yang benar-benar kepakai, sengaja tidak sebanyak FMHY."
+  tagline: "Kumpulan link pilihan member Walehub, tersimpan rapi dalam satu wiki."
   image:
     src: /images/walehub-base-2.webp
     alt: Logo Walehub Wiki

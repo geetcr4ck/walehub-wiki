@@ -4,9 +4,9 @@
 
 ## Stack
 
-- **VitePress (Vue + Vite) + Markdown** — SSG utama, tiru pola `fmhy.net`
+- **VitePress (Vue + Vite) + Markdown** — SSG utama, pola wiki direktori link
 - **Local Search (MiniSearch built-in)** — `search: { provider: 'local' }`, tanpa Algolia
-- **UnoCSS** (opsional awal) — utility CSS ala FMHY
+- **UnoCSS** (opsional awal) — utility CSS
 - **Hosting: Cloudflare Pages** — output `docs/.vitepress/dist`
 
 ## Struktur rencana
@@ -48,7 +48,7 @@ Cloudflare Pages:
 
 ## MVP
 
-- [ ] `config.mts` + nav/sidebar ala FMHY
+- [ ] `config.mts` + nav/sidebar wiki direktori
 - [ ] `index.md` hero + feature grid
 - [ ] 3-5 halaman isi + search jalan
 - [ ] Deploy Cloudflare Pages
