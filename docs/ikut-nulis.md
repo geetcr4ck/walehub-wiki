@@ -5,7 +5,7 @@ Wiki ini dirawat bareng warga Walehub. Kalau nemu link bagus atau ada info yang 
 ## Edit lewat github.com
 
 1. Buka repo `geetcr4ck/walehub-wiki` di github.com.
-2. Masuk ke folder `docs`, lalu buka file yang pas: `beginners-guide.md`, `gaming.md`, `tech.md`, `tools.md`, atau `ai.md`.
+2. Masuk ke folder `docs`, lalu buka file yang pas: `beginners-guide.md`, `tools.md`, atau `ai.md`.
 3. Tekan ikon pensil (Edit this file) di kanan atas.
 4. Tambah satu baris baru di bagian yang cocok, pakai format di bawah.
 5. Tekan tombol hijau `Commit changes`, pilih `Commit directly to the main branch`, tekan lagi `Commit changes`. Situs ikut update sendiri setelah deploy jalan.

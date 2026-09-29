@@ -31,3 +31,24 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 ## Launcher
 
 - [Asyar](https://asyar.org/) ([GitHub](https://github.com/Xoshbin/asyar)) - launcher aplikasi yang dibuka lewat ketikan keyboard, ketik nama app lalu enter.
+
+## Gaming
+- [VGMaps](https://vgmaps.de/) - arsip peta game lama dan baru buat cek jalur, lokasi rahasia, atau nostalgia.
+
+## Browser dan privasi
+- [Browserpedia](https://browserpedia.com/) - tabel perbandingan browser soal fitur, privasi, dan mesin yang dipakai.
+- [WMKeyboard](https://github.com/wasi-master/wmkeyboard) - keyboard Android open source yang fokus privasi, tanpa telemetri bawaan.
+
+## Keamanan
+- [CTI Handbook](https://www.shenouda.nl/cti-handbook/) - panduan gratis soal OSINT dan threat intel dari dasar sampai cari kerja di bidangnya.
+
+## Adblocking
+> Catatan: jangan jalanin dua general adblocker sekaligus biar tidak break, versi full uBlock Origin jauh lebih ampuh dari versi lite, dan gabungin adblocker dengan SponsorBlock itu aman.
+- [uBlock Origin](https://github.com/gorhill/uBlock) - adblocker utama yang paling ampuh, alternatifnya ada [AdGuard](https://github.com/AdguardTeam/AdguardBrowserExtension) dan [uBO Lite](https://github.com/uBlockOrigin/uBOL-home) buat browser MV3.
+- [Lapor filter rusak](https://github.com/uBlockOrigin/uAssets/issues) - laporkan iklan lolos ke [uAssets](https://github.com/uBlockOrigin/uAssets/issues), [Hosts](https://github.com/uBlockOrigin/uAssets/discussions/27472), [AdGuard](https://reports.adguard.com/new_issue.html), atau [EasyList](https://github.com/easylist/easylist/issues) biar cepat dibetulkan.
+- [SponsorBlock](https://sponsor.ajay.app/) ([GitHub](https://github.com/ajayyy/SponsorBlock)) - skip otomatis segmen sponsor di YouTube berbasis crowdsource.
+- [SponsorBlock Tools](https://github.com/mchangrh/sb.js) - varian SponsorBlock selain ekstensi utama, ada [script](https://greasyfork.org/en/scripts/453320) dan [database](https://sb.ltn.fi/) buat platform lain.
+- [Disblock Origin](https://codeberg.org/AllPurposeMat/Disblock-Origin) - sembunyikan iklan Nitro dan Boost di Discord, alternatifnya ada [Discord AdBlock](https://codeberg.org/ridge/Discord-AdBlock).
+- [Popup Blocker strict](https://github.com/schomery/popup-blocker) - blokir popup bandel, alternatifnya ada [PopUpOFF](https://popupoff.org/) dan [userscript AdGuard](https://github.com/AdguardTeam/PopupBlocker).
+- [BehindTheOverlay](https://github.com/NicolaeNMV/BehindTheOverlay) - tutup overlay penghalang situs dalam sekali klik.
+- [BilibiliSponsorBlock](https://www.bsbsb.top/) ([GitHub](https://github.com/hanydd/BilibiliSponsorBlock)) - skip otomatis segmen sponsor di Bilibili ala SponsorBlock.

@@ -23,12 +23,6 @@ features:
   - title: "Ruang Tamu: Panduan Pemula"
     details: "Cara kenalan di server, aturan main yang pendek, dan arti istilah chat seperti mabar dan OT."
     link: /beginners-guide
-  - title: "Ruang Main: Gaming"
-    details: "Format jadwal mabar, rekomendasi game dari obrolan channel, dan tips voice biar main bareng rapi."
-    link: /gaming
-  - title: "Ruang Oprek: Tech"
-    details: "Patokan rakit PC hemat, cek internet rumah yang lemot, dan format tanya yang cepat dijawab."
-    link: /tech
   - title: "Laci Perkakas: Tools"
     details: "Perkakas web harian yang sering kepakai: unduh media, kompres file, bikin QR, sampai launcher keyboard."
     link: /tools

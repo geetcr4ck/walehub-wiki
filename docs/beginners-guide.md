@@ -12,7 +12,7 @@ Struktur sederhananya begini:
 
 - **Lobi dan perkenalan**: tempat sapa dan tulis siapa kamu.
 - **Info dan pengumuman**: hanya dibaca, jangan spam chat di sini.
-- **Gaming dan tech**: tempat diskusi hobi, lihat [Gaming](/gaming) dan [Tech](/tech) untuk daftar topiknya.
+- **Gaming dan tech**: tempat diskusi hobi dan oprek bareng di Discord.
 
 ## Aturan main yang santai
 

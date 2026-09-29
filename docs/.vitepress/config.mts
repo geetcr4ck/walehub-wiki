@@ -98,8 +98,6 @@ export default defineConfig({
     nav: [
       { text: 'Beranda', link: '/' },
       { text: 'Panduan Pemula', link: '/beginners-guide' },
-      { text: 'Gaming', link: '/gaming' },
-      { text: 'Tech', link: '/tech' },
       { text: 'Tools', link: '/tools' },
       { text: 'AI', link: '/ai' },
       { text: 'Ikut Nulis', link: '/ikut-nulis' }
@@ -115,10 +113,8 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Kumpul',
+        text: 'Wiki',
         items: [
-          { text: 'Gaming', link: '/gaming' },
-          { text: 'Tech', link: '/tech' },
           { text: 'Tools', link: '/tools' },
           { text: 'AI', link: '/ai' }
         ]
