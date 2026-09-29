@@ -31,4 +31,3 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 ## Launcher
 
 - [Asyar](https://asyar.org/) ([GitHub](https://github.com/Xoshbin/asyar)) - launcher aplikasi yang dibuka lewat ketikan keyboard, ketik nama app lalu enter.
-- [Test Dummy](https://example.com/test-mode-dummy) - link dummy untuk uji test_mode workflow link tracker.
