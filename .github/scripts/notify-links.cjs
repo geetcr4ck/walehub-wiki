@@ -24,6 +24,20 @@ const { execFileSync } = require('node:child_process');
 const fs = require('node:fs');
 
 const COLOR = 0x3179EE;
+const WIKI_BUTTON = [
+  {
+    type: 1,
+    components: [
+      {
+        type: 2,
+        style: 5,
+        label: 'Buka Walehub Wiki',
+        url: 'https://walehub-wiki.pages.dev/',
+        emoji: { name: 'click', id: '1553966843688124477' },
+      },
+    ],
+  },
+];
 const DELETE_COLOR = 0xED4245;
 const MAX_LINKS_SHOWN = 20;
 const MD_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
@@ -178,6 +192,7 @@ function buildPayload(links, { eventName, newSha, timestamp }) {
         footer: { text: `walehub-wiki @ ${newSha.slice(0, 7)}` },
       },
     ],
+    components: WIKI_BUTTON,
   };
 }
 
@@ -199,6 +214,7 @@ function buildDeletePayload(links, { eventName, newSha, timestamp }) {
         footer: { text: `walehub-wiki @ ${newSha.slice(0, 7)}` },
       },
     ],
+    components: WIKI_BUTTON,
   };
 }
 
@@ -257,6 +273,7 @@ async function runTestMode() {
         footer: { text: 'walehub-wiki • test' },
       },
     ],
+    components: WIKI_BUTTON,
   };
   if (!webhook) {
     console.log('warn: DISCORD_WEBHOOK_URL kosong, webhook dilewati');
@@ -323,11 +340,11 @@ async function main() {
   }
   if (!webhook) {
     console.log('warn: DISCORD_WEBHOOK_URL kosong, webhook dilewati');
-    console.log(JSON.stringify({ embeds }, null, 2));
+    console.log(JSON.stringify({ embeds, components: WIKI_BUTTON }, null, 2));
     return;
   }
 
-  const { status, body } = await postWebhook(webhook, { embeds });
+  const { status, body } = await postWebhook(webhook, { embeds, components: WIKI_BUTTON });
   console.log(`discord status: ${status} ${body}`);
   if (status < 200 || status >= 300) {
     process.exitCode = 1;
