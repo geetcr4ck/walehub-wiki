@@ -222,6 +222,11 @@ function sleep(ms) {
 }
 
 async function postWebhook(url, payload, maxRetries = 4) {
+  // Webhook bikinan manual (non-app-owned) butuh ?with_components=true
+  // biar action row button tidak di-drop diam-diam (204 tapi no button).
+  if (!url.includes('with_components=')) {
+    url += url.includes('?') ? '&with_components=true' : '?with_components=true';
+  }
   let attempt = 0;
   // biome-ignore lint: loop retry 429
   while (true) {
