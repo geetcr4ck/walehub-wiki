@@ -4,7 +4,7 @@ const siteUrl = 'https://walehub-wiki.pages.dev/'
 const siteTitle = 'Walehub Wiki | Wiki rumah kumpul Discord'
 const siteDescription =
   'Panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server Walehub. Terbuka untuk kontribusi dan umpan balik.'
-const ogImage = 'https://walehub-wiki.pages.dev/images/walehub.webp'
+const ogImage = 'https://walehub-wiki.pages.dev/images/walehub-transparent.webp'
 
 // Discord component embed (Components V2, inline JSON < 3000 bytes).
 // Bentuk mengikuti "LINK PREVIEW + Component EMBED DISCORD.md": dokumen
@@ -25,7 +25,7 @@ const discordComponentEmbed = {
         ],
         accessory: {
           type: 11,
-          media: { url: 'https://walehub-wiki.pages.dev/images/walehub.webp' }
+          media: { url: 'https://walehub-wiki.pages.dev/images/walehub-transparent.webp' }
         }
       },
       {
@@ -65,7 +65,7 @@ export default defineConfig({
   description: 'Panduan dan tautan yang dikumpulkan jadi satu, dikurasi bersama member server Walehub. Terbuka untuk kontribusi dan umpan balik.',
   cleanUrls: true,
   head: [
-    ['link', { rel: 'icon', href: '/images/walehub.webp', type: 'image/webp' }],
+    ['link', { rel: 'icon', href: '/images/walehub-transparent.webp', type: 'image/webp' }],
     ['link', { rel: 'canonical', href: siteUrl }],
     ['meta', { name: 'description', content: siteDescription }],
     ['meta', { name: 'theme-color', content: '#f1c40f' }],
@@ -93,7 +93,7 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: 'Walehub Wiki',
-    logo: '/images/walehub.webp',
+    logo: '/images/walehub-transparent.webp',
 
     nav: [
       { text: 'Beranda', link: '/' },
@@ -135,7 +135,15 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: 'Terakhir diubah'
+      text: 'Terakhir diubah',
+      formatOptions: {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        forceLocale: true
+      }
     },
 
     docFooter: {
