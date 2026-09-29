@@ -101,7 +101,8 @@ export default defineConfig({
       { text: 'Gaming', link: '/gaming' },
       { text: 'Tech', link: '/tech' },
       { text: 'Tools', link: '/tools' },
-      { text: 'AI', link: '/ai' }
+      { text: 'AI', link: '/ai' },
+      { text: 'Ikut Nulis', link: '/ikut-nulis' }
     ],
 
     sidebar: [
@@ -109,7 +110,8 @@ export default defineConfig({
         text: 'Mulai di sini',
         items: [
           { text: 'Beranda', link: '/' },
-          { text: 'Panduan Pemula', link: '/beginners-guide' }
+          { text: 'Panduan Pemula', link: '/beginners-guide' },
+          { text: 'Ikut Nulis', link: '/ikut-nulis' }
         ]
       },
       {
