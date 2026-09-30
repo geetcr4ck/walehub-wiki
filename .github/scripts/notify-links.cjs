@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * notify-links.cjs — hybrid link tracker (push + hourly recap), Node stdlib only.
+ * notify-links.cjs — link tracker push-only, Node stdlib only.
  *
  * - OLD/NEW SHA:
  *   push     → github.event.before / .after via $GITHUB_EVENT_PATH
- *   schedule → `gh variable get LAST_SHA`, fallback HEAD~1
+ *   manual   → HEAD~1..HEAD, fallback sama
  * - Diff: git diff -U0 OLD NEW -- 'docs/*.md' ':(exclude)docs/.vitepress/**'
  * - Baris tambah (`+` bukan `+++`) → link baru; baris hapus (`-` bukan `---`)
  *   → link dihapus. Keduanya pakai regex md + bare URL yang sama, dedupe,
@@ -12,12 +12,11 @@
  *   Silent (tanpa spam) jika masing-masing 0.
  * - Embed tambah: color 0x3179EE. Embed hapus (terpisah): color merah 0xED4245,
  *   timestamp + footer sama seperti embed tambah. Timestamp dari
- *   `git log -1 --format=%cI`, footer short-SHA, retry 429,
- *   update LAST_SHA setelah sukses.
+ *   `git log -1 --format=%cI`, footer short-SHA, retry 429.
  *
- * Env: GH_TOKEN (untuk `gh variable`), DISCORD_WEBHOOK_URL, GITHUB_* (CI),
- *   TEST_MODE=true (dari workflow_dispatch input test_mode) → kirim 1 embed
- *   dummy tanpa diff, exit 0 tanpa update LAST_SHA.
+ * Env: DISCORD_WEBHOOK_URL, GITHUB_* (CI),
+ *   TEST_MODE=true (dari workflow_dispatch input test_mode) → kirim embed
+ *   dummy tanpa diff, exit 0.
  */
 
 const { execFileSync } = require('node:child_process');
@@ -78,23 +77,6 @@ function resolveHead() {
   return sh('git', ['rev-parse', 'HEAD']);
 }
 
-function getLastShaVariable() {
-  // File-state via actions/cache (.github/.last-sha); gagal → throw → fallback.
-  const p = require('node:path').join(process.cwd(), '.github', '.last-sha');
-  return fs.readFileSync(p, 'utf8');
-}
-
-function setLastShaVariable(sha) {
-  try {
-    const p = require('node:path').join(process.cwd(), '.github', '.last-sha');
-    fs.mkdirSync(require('node:path').dirname(p), { recursive: true });
-    fs.writeFileSync(p, `${sha}\n`);
-    console.log(`LAST_SHA updated → ${sha}`);
-  } catch (err) {
-    console.warn(`warn: gagal update LAST_SHA: ${err.message}`);
-  }
-}
-
 function determineRange() {
   const eventName = process.env.GITHUB_EVENT_NAME || '';
   const event = readEvent();
@@ -111,19 +93,11 @@ function determineRange() {
     return { oldSha, newSha, eventName };
   }
 
-  // schedule / workflow_dispatch / local: LAST_SHA → HEAD
+  // workflow_dispatch / local: bandingkan 1 commit terakhir.
   const newSha = process.env.GITHUB_SHA && revExists(process.env.GITHUB_SHA)
     ? process.env.GITHUB_SHA
     : head;
-  let oldSha = '';
-  try {
-    oldSha = getLastShaVariable().trim();
-  } catch (err) {
-    console.log(`info: LAST_SHA tidak terbaca (${err.message.slice(0, 120)}), fallback HEAD~1`);
-  }
-  if (isZeroSha(oldSha) || oldSha === newSha || !revExists(oldSha)) {
-    oldSha = sh('git', ['rev-parse', 'HEAD~1']);
-  }
+  const oldSha = sh('git', ['rev-parse', 'HEAD~1']);
   return { oldSha, newSha, eventName };
 }
 
@@ -173,10 +147,9 @@ function parseDiff(diffText) {
   return { added: toList(added), removed: toList(removed) };
 }
 
-function buildPayload(links, { eventName, newSha, timestamp }) {
+function buildPayload(links, { newSha, timestamp }) {
   const n = links.length;
-  const isPush = eventName === 'push';
-  const title = isPush ? `<:addlink:1554438378429227140> ${n} link baru di wiki` : `<:addlink:1554438378429227140> ${n} link baru (rekap 1 jam)`;
+  const title = `<:addlink:1554438378429227140> ${n} link baru di wiki`;
   const shown = links.slice(0, MAX_LINKS_SHOWN);
   const lines = shown.map((l) => `- [${l.label}](<${l.url}>)`);
   const rest = n - shown.length;
@@ -195,10 +168,9 @@ function buildPayload(links, { eventName, newSha, timestamp }) {
   };
 }
 
-function buildDeletePayload(links, { eventName, newSha, timestamp }) {
+function buildDeletePayload(links, { newSha, timestamp }) {
   const n = links.length;
-  const isPush = eventName === 'push';
-  const title = isPush ? `<:deletelink:1554438382505959514> ${n} link dihapus dari wiki` : `<:deletelink:1554438382505959514> ${n} link dihapus (rekap 1 jam)`;
+  const title = `<:deletelink:1554438382505959514> ${n} link dihapus dari wiki`;
   const shown = links.slice(0, MAX_LINKS_SHOWN);
   const lines = shown.map((l) => `- [${l.label}](<${l.url}>)`);
   const rest = n - shown.length;
@@ -289,7 +261,6 @@ async function runTestMode() {
   if (status < 200 || status >= 300) {
     process.exitCode = 1;
   }
-  // Sengaja tanpa update LAST_SHA.
 }
 
 async function main() {
@@ -318,7 +289,6 @@ async function main() {
 
   if (added.length === 0 && removed.length === 0) {
     console.log('silent: 0 link, webhook dilewati');
-    setLastShaVariable(newSha);
     return;
   }
 
@@ -354,7 +324,6 @@ async function main() {
     process.exitCode = 1;
     return;
   }
-  setLastShaVariable(newSha);
 }
 
 main().catch((err) => {
