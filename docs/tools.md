@@ -32,10 +32,6 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [Asyar](https://asyar.org/) ([GitHub](https://github.com/Xoshbin/asyar)) - launcher aplikasi yang dibuka lewat ketikan keyboard, ketik nama app lalu enter.
 
-## Gaming
-- [VGMaps](https://vgmaps.de/) - arsip peta game lama dan baru buat cek jalur, lokasi rahasia, atau nostalgia.
-- [Vanilla RTX App](https://github.com/cubeir/Vanilla-RTX-App) - aplikasi all-in-one buat pasang ray tracing di Minecraft Bedrock, dari install Vanilla RTX, ubah texture jadi RTX, tuning pack, sampai launch game langsung.
-
 ## Browser dan privasi
 - [Browserpedia](https://browserpedia.com/) - tabel perbandingan browser soal fitur, privasi, dan mesin yang dipakai.
 - [WMKeyboard](https://github.com/wasi-master/wmkeyboard) - keyboard Android open source yang fokus privasi, tanpa telemetri bawaan.

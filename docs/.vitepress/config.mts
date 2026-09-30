@@ -97,6 +97,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Beranda', link: '/' },
+      { text: 'Gaming', link: '/gaming' },
       { text: 'Tools', link: '/tools' },
       { text: 'AI', link: '/ai' },
       { text: 'Ikut Nulis', link: '/ikut-nulis' }
@@ -113,6 +114,7 @@ export default defineConfig({
       {
         text: 'Wiki',
         items: [
+          { text: 'Gaming', link: '/gaming' },
           { text: 'Tools', link: '/tools' },
           { text: 'AI', link: '/ai' }
         ]
