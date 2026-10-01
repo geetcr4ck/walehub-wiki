@@ -351,3 +351,74 @@ Kumpulan tool keamanan pilihan member: antivirus, scanner file, cek situs, plus 
 - [WG Tunnel](https://wgtunnel.com/) ([GitHub](https://github.com/wgtunnel)) - client WireGuard dan AmneziaWG.
 - [VPN Hotspot](https://github.com/Mygod/VPNHotspot) - share koneksi VPN via hotspot, perlu Android root.
 - [Gluetun](https://github.com/qdm12/gluetun) - jalanin VPN dalam Docker.
+
+## Proxy
+
+- [Lantern](https://lantern.io/) ([GitHub](https://github.com/getlantern/lantern)) - app proxy yang gampang dipakai.
+- [Psiphon](https://psiphon.ca/) - app hybrid proxy VPN buat tembus blokir.
+- [FreeSocks](https://freesocks.org/) ([GitHub](https://github.com/unredacted/freesocks-control-plane)) - app Shadowsocks yang gratis.
+- [Snowflake](https://snowflake.torproject.org/) - ekstensi browser proxy Tor yang bantu orang lain tembus sensor.
+- [Censor Tracker](https://censortracker.org/) ([GitHub](https://github.com/censortracker/censortracker)) - ekstensi proxy anti sensor, alternatif SmartProxy, FoxyProxy, ZeroOmega.
+- [Acrylic](https://mayakron.altervista.org/) - proxy DNS lokal buat Windows.
+- [SimpleDnsCrypt](https://github.com/instantsc/SimpleDnsCrypt) - proxy enkripsi DNS lokal, alternatif DNSCrypt.
+
+## Server proxy
+
+- [3X-UI](https://docs.sanaei.dev/) ([Guide](https://wispydocs.pages.dev/network-censorship-circumvention/)) - panel proxy yang gampang, ikuti guidenya buat setup.
+- [Project X](https://github.com/XTLS/Xray-core) - core proxy Xray yang powerful.
+- [NaïveProxy](https://github.com/klzgrad/naiveproxy) - proxy berbasis Chromium yang susah dideteksi.
+- [Hysteria](https://v2.hysteria.network/) ([GitHub](https://github.com/apernet/hysteria)) - protokol proxy fokus kecepatan.
+- [Shadowsocks](https://shadowsocks.org/) ([GitHub](https://github.com/shadowsocks)) - protokol proxy simpel yang legendaris.
+- [sing-box](https://sing-box.sagernet.org/) ([GitHub](https://github.com/SagerNet/sing-box)) - core proxy universal yang modern.
+- [Hiddify Manager](https://hiddify.com/) ([GitHub](https://github.com/hiddify/Hiddify-Manager)) - panel proxy yang user-friendly.
+- [Outline](https://getoutline.org/) ([Guide](https://docs.getoutline.com/s/hosting/)) - server Shadowsocks yang gampang deploy, ikuti guidenya.
+- [VpnHood](https://github.com/vpnhood/VpnHood) - server proxy open source.
+- [Scramjet](https://docs.titaniumnetwork.org/proxies/scramjet/) - server web proxy, alternatif Nebula.
+- [Nginx Proxy Manager](https://nginxproxymanager.com) ([GitHub](https://github.com/NginxProxyManager/nginx-proxy-manager)) - UI reverse proxy yang gampang.
+
+## Client proxy
+
+- [v2rayN](https://github.com/2dust/v2rayN) - client proxy buat Windows, macOS, dan Linux.
+- [v2rayNG](https://github.com/2dust/v2rayNG) - client proxy Android, alternatif NekoBox dan MahsaNG.
+- [Hiddify](https://hiddify.com/) ([GitHub](https://github.com/hiddify)) - client proxy semua platform.
+- [Amnezia](https://amnezia.org/) ([GitHub](https://github.com/amnezia-vpn)) - client proxy semua platform.
+- [Shadowsocks clients](https://shadowsocks.org/doc/getting-started.html#gui-clients) ([GitHub](https://github.com/shadowsocks)) - daftar client Shadowsocks semua platform.
+- [sing-box clients](https://sing-box.sagernet.org/clients/) ([GitHub](https://github.com/SagerNet/sing-box)) - client proxy buat macOS dan Android.
+- [Throne](https://throneproj.github.io/) ([GitHub](https://github.com/throneproj/Throne)) - client proxy GUI sing-box buat Windows, macOS, dan Linux.
+- [V2Box](https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box) - client proxy Android, ada versi iOS.
+- [ClashVerge](https://www.clashverge.dev/) ([GitHub](https://github.com/clash-verge-rev/clash-verge-rev)) - client proxy buat Windows, macOS, dan Linux.
+- [Streisand](https://streisand.pages.dev/) - client proxy buat macOS dan iOS.
+- [FlClash](https://github.com/chen08209/FlClash/blob/main/README.md) - client proxy buat Windows, macOS, Linux, dan Android.
+- [husi](https://github.com/xchacha20-poly1305/husi) - client proxy Android.
+- [Exclave](https://github.com/dyhkwong/Exclave) - client proxy Android.
+- [Proxifier](https://www.proxifier.com/) - tambah fungsi proxy ke app apa pun di Windows, macOS, dan Android.
+- [wireproxy](https://github.com/whyvl/wireproxy) - WireGuard sebagai proxy buat Windows, macOS, dan Linux.
+
+## Anti sensor
+
+- [Project Atlas](https://project-atlas-dbb.pages.dev/) - panduan bypass sensor yang lengkap.
+- [Net4people](https://github.com/net4people/bbs/issues) - diskusi circumvention sensor sedunia.
+- [ByeDPIAndroid](https://github.com/dovecoteescapee/ByeDPIAndroid) - alter paket jaringan buat Android.
+- [zapret](https://github.com/bol-van/zapret2) - alter paket jaringan, alternatif SpoofDPI dan GoodbyeDPI.
+- [DNSveil](https://msasanmh.github.io/DNSveil/) ([GitHub](https://github.com/msasanmh/DNSveil)) - client DNS anti sensor.
+- [Geph](https://geph.io/) ([GitHub](https://github.com/geph-official)) - proxy anti sensor yang pandai kamuflase trafik.
+- [DNSTT.XYZ](https://dnstt.xyz/) - tunnel DNS mobile buat bypass sensor, alternatif HTTP Injector, HTTP Custom, NetMod, SlipNet, WhiteDNS, DarkTunnel.
+- [FilterWatch](https://filter.watch/english/) - berita dan artikel sensor internet.
+- [ByeByeDPI](https://github.com/romanvht/ByeByeDPI/blob/master/README-en.md) - alter paket jaringan, alternatif Paqet, PowerTunnel, Green Tunnel, dan Rethink DNS.
+- [YouTubeUnblock](https://github.com/Waujito/youtubeUnblock) - buka blokir YouTube via SNI spoof buat router OpenWrt dan Entware.
+- [Scamalytics](https://scamalytics.com/) - cek blacklist IP.
+
+## Situs proxy
+
+> Catatan: situs proxy catat info kayak IP dan situs dikunjungi, jadi enak buat buka blokir tapi tidak buat privasi.
+
+- [Titanium Network](https://titaniumnetwork.org/#services) ([GitHub](https://github.com/titaniumnetwork-dev)) - multi-proxy dengan banyak instances.
+- [SSLSecureProxy](https://www.sslsecureproxy.com/) - proxy web simpel, alternatif 4everproxy dan hideip.co.
+- [ProxyOf2](https://proxyof2.com/) - proxy web yang ringan.
+- [Phantom](https://phantom.lol/) - proxy web minimalis.
+- [Reflect4](https://reflect4.me/) - proxy web cepat, alternatif CroxyProxy dan Blockaway.
+- [ProxyPal](https://proxypal.net/) - proxy web yang simpel.
+- [Proxyium](https://proxyium.com/) - proxy web gratis tanpa ribet.
+- [Google Translate](https://translate.google.com/) - proxy darurat buat buka situs diblokir via translate.
+- [Proxy Checker](https://proxy-checker.net/) - scraper dan checker proxy, alternatif proxy-scraper dan proxy-scraper-checker.
+- [Knaben.info](https://knaben.info/) - daftar proxy situs torrent.
