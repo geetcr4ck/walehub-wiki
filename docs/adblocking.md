@@ -122,3 +122,21 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [uBO Lite Safari](https://apps.apple.com/app/ublock-origin-lite/id6745342698) - adblocker Safari ringan dari tim uBlock Origin.
 - [iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock) - skip sponsorship YouTube di iOS yang sudah jailbreak.
 - [SponsorBlock YT Music](https://github.com/dayanch96/SponsorBlock-YouTubeMusic) - skip segmen non-musik di YouTube Music.
+
+## Antivirus
+
+> Catatan: biarkan real-time protection Windows Defender menyala, pilih Allow on device buat deteksi bajakan seperti patch, atau exclude per file bila false positive.
+
+- [Malwarebytes](https://www.malwarebytes.com/) - antivirus utama yang ampuh buat scan dan bersih-bersih malware.
+- [AdwCleaner](https://www.malwarebytes.com/adwcleaner/) - pembersih adware gratis dari Malwarebytes yang jalan cepat.
+- [Triage](https://tria.ge/) - sandbox online buat bedah file mencurigakan, alternatifnya ada [ANY.RUN](https://any.run/) dan [Cuckoo](https://cuckoo.cert.ee/).
+- [Multireddit keamanan](https://www.reddit.com/user/goretsky/m/security/) - kumpulan komunitas Reddit soal antivirus dan keamanan.
+- [BleepingComputer](https://www.bleepingcomputer.com/forums/f/22/virus-trojan-spyware-and-malware-removal-help/) - forum bantuan hapus malware, alternatifnya ada [forum Malwarebytes](https://forums.malwarebytes.com/forum/7-windows-malware-removal-help-support/) dan [Sysnative](https://www.sysnative.com/forums/forums/security-arena.66/).
+- [rifteyy](https://rifteyy.org/) - panduan dan blog hapus malware yang gampang diikuti.
+- [Sandboxie Plus](https://sandboxie-plus.com/) ([Guide](https://clarasguide.valeena.workers.dev/Guides/sandboxie-guide/)) - jalanin app mencurigakan di sandbox biar sistem utama aman.
+- [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) - sandbox VM bawaan Windows yang bersih tiap dibuka.
+- [Dangerzone](https://dangerzone.rocks/) ([GitHub](https://github.com/freedomofpress/dangerzone)) - ubah PDF berbahaya jadi file aman via sandbox.
+- [Ransomware.live](https://www.ransomware.live/) - monitor ransomware live buat pantau serangan yang jalan.
+- [No More Ransom](https://www.nomoreransom.org/en/decryption-tools.html) - tool dekripsi ransomware gratis dari proyek gabungan.
+- [ID Ransomware](https://id-ransomware.malwarehunterteam.com/) - identifikasi varian ransomware dari file sampel.
+- [ConfigureDefender](https://github.com/AndyFul/ConfigureDefender) - atur setting Windows Defender sampai maksimal via tool open source.
