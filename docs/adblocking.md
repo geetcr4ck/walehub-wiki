@@ -140,3 +140,18 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [No More Ransom](https://www.nomoreransom.org/en/decryption-tools.html) - tool dekripsi ransomware gratis dari proyek gabungan.
 - [ID Ransomware](https://id-ransomware.malwarehunterteam.com/) - identifikasi varian ransomware dari file sampel.
 - [ConfigureDefender](https://github.com/AndyFul/ConfigureDefender) - atur setting Windows Defender sampai maksimal via tool open source.
+
+### File scanner
+
+- [The Second Opinion](https://jijirae.github.io/thesecondopinion/index.html) ([GitHub](https://github.com/jijirae/thesecondopinion/)) - direktori scanner malware portable plus tool hapus yang rapi.
+- [VirusTotal](https://www.virustotal.com/) ([Panduan hasil](https://clarasguide.valeena.workers.dev/Guides/vtguide/)) - scan file online dengan puluhan engine, alternatifnya ada [Hybrid Analysis](https://hybrid-analysis.com/).
+- [VirusTotal Tools](https://github.com/VirusTotal/vt-cli) - perkakas VirusTotal: CLI, [uploader](https://github.com/SamuelTulach/VirusTotalUploader), dan [versi lite](https://www.virustotal.com/old-browsers/) buat browser lawas.
+- [Jotti](https://virusscan.jotti.org/en) - scan file online yang simpel tanpa signup.
+- [Filescan.io](https://www.filescan.io/) ([GitHub](https://github.com/filescanio)) - scan file online dengan analisis mendalam, alternatifnya ada [MetaDefender Cloud](https://metadefender.com/).
+- [Farbar](https://www.bleepingcomputer.com/download/farbar-recovery-scan-tool/) ([Guide](https://www.bleepingcomputer.com/forums/t/781976/)) - scan file lokal buat diagnosis malware, ikuti guidenya biar log dibaca benar.
+- [Microsoft Safety Scanner](https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download) - scanner AV on-demand dari Microsoft buat bersih-bersih darurat.
+- [Manalyzer](https://manalyzer.org/) ([GitHub](https://github.com/JusticeRage/Manalyze)) - scan file PE buat bedah struktur executable.
+- [YARA](https://virustotal.github.io/yara/) ([GitHub](https://github.com/virustotal/yara)) - tool identifikasi malware berbasis rules yang jadi standar industri.
+- [Winitor](https://www.winitor.com/) - nilai EXE mencurigakan atau aman langsung dari web.
+- [pyWhat](https://github.com/bee-san/pyWhat) - identifikasi potongan teks, hash, atau file misterius via CLI.
+- [Grype](https://github.com/anchore/grype) - scan kerentanan container image yang open source.
