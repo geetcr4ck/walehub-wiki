@@ -155,3 +155,13 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [Winitor](https://www.winitor.com/) - nilai EXE mencurigakan atau aman langsung dari web.
 - [pyWhat](https://github.com/bee-san/pyWhat) - identifikasi potongan teks, hash, atau file misterius via CLI.
 - [Grype](https://github.com/anchore/grype) - scan kerentanan container image yang open source.
+
+### Cek legitimasi situs
+
+- [URLVoid](https://www.urlvoid.com/) - cek reputasi situs dengan 35 engine blocklist sekaligus.
+- [urlscan](https://urlscan.io/) - laporan detail situs plus API buat analisis mendalam.
+- [Trend Micro Site Safety](https://global.sitesafety.trendmicro.com/) - rating keamanan dasar plus tag konten situs.
+- [ScamAdviser](https://www.scamadviser.com/) - skor kepercayaan situs biar ketahuan scam atau bukan.
+- [IsLegitSite](https://www.islegitsite.com/) - cek situs dengan 9 engine blocklist yang cepat.
+- [Zulu Zscaler](https://zulu.zscaler.com/) - analisis URL dan reputasi domain dari Zscaler.
+- [Talos](https://talosintelligence.com/) - rating reputasi plus tag konten dan flag blocklist dari Cisco.
