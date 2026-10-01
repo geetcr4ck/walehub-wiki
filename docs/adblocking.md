@@ -23,7 +23,6 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [LegitimateURLShortener](https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/LegitimateURLShortener.txt) - rules bersih-bersih query parameter URL, enak dipasang bareng proteksi tracking URL AdGuard.
 - [HaGeZi](https://github.com/hagezi/dns-blocklists) - koleksi blocklist yang rapi, buat filter browser pakai edisi Mini biar ringan.
 - [hBlock](https://hblock.molinero.dev/) ([GitHub](https://github.com/hectorm/hblock)) - koleksi blocklist ringan yang gampang dipasang.
-- [Filter situs berbahaya](https://github.com/fmhy/FMHYFilterlist) - filter situs tidak aman buat lapis proteksi tambahan.
 - [AI uBlock Blacklist](https://github.com/alvi-se/ai-ublock-blacklist) - blokir situs hasil generate AI yang spammy.
 
 ## DNS adblocking
@@ -60,3 +59,22 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [Scam Blocklist](https://github.com/durablenapkin/scamblocklist) - blocklist khusus situs scam.
 - [neodevhost](https://github.com/neodevpro/neodevhost) - blocklist host berbahaya yang ringan.
 - [1Hosts](https://o0.pages.dev/) ([GitHub](https://github.com/badmojr/1Hosts)) - blocklist yang proteksinya agresif, cocok buat yang mau bersih total.
+
+## Keamanan Linux
+
+- [Arch Security Wiki](https://wiki.archlinux.org/title/Security) - panduan keamanan Linux yang paling lengkap, alternatifnya ada [Linux Hardening](https://vez.mrsk.me/linux-hardening) dan [How to Secure a Linux Server](https://github.com/imthenachoman/How-To-Secure-A-Linux-Server).
+- [CryptSetup](https://gitlab.com/cryptsetup/cryptsetup) - enkripsi disk standar Linux, alternatifnya ada [gocryptfs](https://nuetzlich.net/gocryptfs) dan [Tomb](https://dyne.org/software/tomb/) buat enkripsi file.
+- [Securely Wipe Disk](https://wiki.archlinux.org/title/Securely_wipe_disk) - panduan hapus disk Linux sampai bersih, termasuk [clearing cell SSD](https://wiki.archlinux.org/title/Solid_state_drive/Memory_cell_clearing/).
+- [Lynis](https://github.com/CISOfy/lynis) - tool audit keamanan Linux yang open source buat cek hardening sistem.
+- [Mistborn](https://gitlab.com/cyber5k/mistborn) - kelola app keamanan cloud dari satu tempat.
+- [OpenSnitch](https://github.com/evilsocket/opensnitch) - firewall Linux yang open source buat atur koneksi per aplikasi.
+- [Tracee](https://aquasecurity.github.io/tracee/latest) - tool runtime security dan forensik buat pantau kejadian sistem.
+- [vnStat](https://github.com/vergoh/vnstat) - monitor trafik jaringan yang ringan dan open source.
+- [Howdy](https://github.com/boltgolt/howdy) - autentikasi wajah buat Linux ala Windows Hello.
+- [USBGuard](https://github.com/USBGuard/usbguard) - atur izin perangkat USB biar colok sembarangan ditolak.
+- [ShuffleStacks](https://shufflecake.net/) - bikin hidden volume tersembunyi di dalam disk.
+- [Collision](https://flathub.org/apps/dev.geopjr.Collision) - cek hash file dengan cepat buat verifikasi unduhan.
+- [WhoAmI](https://owerdogan.github.io/whoami-project) ([GitHub](https://github.com/owerdogan/whoami-project)) - tool privasi dan anonimitas all-in-one.
+- [Yubikey Full Disk Encryption](https://github.com/agherzan/yubikey-full-disk-encryption) - buka partisi LUKS pakai YubiKey biar tidak perlu ketik passphrase.
+- [Firejail](https://firejail.wordpress.com/) - sandboxing app Linux yang ringan, alternatifnya ada [Bubblewrap](https://github.com/containers/bubblewrap).
+- [Googerteller](https://github.com/berthubert/googerteller) - notifikasi tiap ada app yang kontak ke Google.
