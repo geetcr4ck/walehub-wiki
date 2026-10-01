@@ -112,3 +112,13 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [AdAway](https://adaway.org/) ([GitHub](https://github.com/AdAway/AdAway)) - app adblock open source buat Android yang legendaris.
 - [bindhosts](https://github.com/bindhosts/bindhosts) - adblock systemless buat Android rooted tanpa ubah partisi sistem.
 - [PrivateDNSAndroid](https://github.com/karasevm/PrivateDNSAndroid) - switcher DNS privat biar gampang ganti provider DNS di Android.
+
+## Adblock iOS
+
+- [wBlock](https://apps.apple.com/app/wblock/id6746388723) ([GitHub](https://github.com/0xCUB3/wBlock)) - adblocker Safari yang ringan dan open source.
+- [AdGuard iOS](https://adguard.com/en/adguard-ios/overview.html) ([Guide](https://avieshek.wordpress.com/2024/07/07/how-to-filter-ads-and-block-popups-on-iphone-and-macos/)) - adblocker iOS yang powerful, ikuti guidenya biar filter maksimal.
+- [Brave](https://apps.apple.com/app/id1052879175) - browser anti iklan bawaan yang tinggal pakai tanpa setting.
+- [Orion](https://orionbrowser.com/) - browser iOS anti iklan yang bisa pasang ekstensi desktop.
+- [uBO Lite Safari](https://apps.apple.com/app/ublock-origin-lite/id6745342698) - adblocker Safari ringan dari tim uBlock Origin.
+- [iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock) - skip sponsorship YouTube di iOS yang sudah jailbreak.
+- [SponsorBlock YT Music](https://github.com/dayanch96/SponsorBlock-YouTubeMusic) - skip segmen non-musik di YouTube Music.
