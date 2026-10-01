@@ -97,10 +97,10 @@ export default defineConfig({
 
     nav: [
       { text: 'Beranda', link: '/' },
-      { text: 'Gaming', link: '/gaming' },
       { text: 'Tools', link: '/tools' },
       { text: 'Adblocking', link: '/adblocking' },
       { text: 'AI', link: '/ai' },
+      { text: 'Gaming', link: '/gaming' },
       { text: 'Ikut Nulis', link: '/ikut-nulis' }
     ],
 
@@ -113,12 +113,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Wiki',
+        text: 'Harian',
         items: [
-          { text: 'Gaming', link: '/gaming' },
           { text: 'Tools', link: '/tools' },
           { text: 'Adblocking', link: '/adblocking' },
-          { text: 'AI', link: '/ai' }
+          { text: 'DNS', link: '/dns' },
+          { text: 'Keamanan', link: '/keamanan' }
+        ]
+      },
+      {
+        text: 'Kreatif',
+        items: [
+          { text: 'AI', link: '/ai' },
+          { text: 'Audio AI', link: '/audio-ai' }
+        ]
+      },
+      {
+        text: 'Main',
+        items: [
+          { text: 'Gaming', link: '/gaming' }
         ]
       }
     ],

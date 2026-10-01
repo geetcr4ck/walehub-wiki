@@ -111,8 +111,6 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 - [Clip Fish](https://clip.fish/) ([GitHub](https://github.com/clip-fish/web)) - bagi file P2P ringan langsung dari web tanpa daftar.
 
 ## Browser dan privasi
+
 - [Browserpedia](https://browserpedia.com/) - tabel perbandingan browser soal fitur, privasi, dan mesin yang dipakai.
 - [WMKeyboard](https://github.com/wasi-master/wmkeyboard) - keyboard Android open source yang fokus privasi, tanpa telemetri bawaan.
-
-## Keamanan
-- [CTI Handbook](https://www.shenouda.nl/cti-handbook/) - panduan gratis soal OSINT dan threat intel dari dasar sampai cari kerja di bidangnya.
