@@ -303,3 +303,51 @@ Kumpulan tool keamanan pilihan member: antivirus, scanner file, cek situs, plus 
 - [search!](https://search.tiago.zip/) ([GitHub](https://github.com/tiagozip/metasearch)) - metasearch bebas AI yang ringan dan gampang dipakai.
 - [Mojeek](https://www.mojeek.com/) - search independen dengan indeks sendiri tanpa tracking.
 - [YaCy](https://yacy.net/) ([GitHub](https://github.com/yacy/yacy_search_server)) - search P2P terdesentralisasi yang bisa di-host sendiri.
+
+## VPN
+
+> Catatan: VPN berbayar umumnya lebih baik buat privasi dan speed, VPN gratis cukup buat buka blokir situs, dan bind VPN ke torrent client biar tidak kena surat ISP.
+
+- [Techlore Chart](https://vpn.techlore.tech/) - chart perbandingan VPN yang rapi.
+- [VPN Relationships](https://kumu.io/Windscribe/vpn-relationships) - peta relasi perusahaan VPN, alternatifnya ada peta Windscribe yang mirip.
+- [Cloudflare One](https://one.one.one.one/) - gratis unlimited.
+- [Proton VPN](https://protonvpn.com) ([Wireguard](https://protonvpn.com/support/wireguard-configurations)) - gratis dan berbayar unlimited, paket gratis tidak bisa torrent.
+- [Windscribe](https://windscribe.com) ([GitHub](https://github.com/windscribe)) - gratis dan berbayar 10GB bulanan, paket gratis tidak bisa torrent.
+- [AirVPN](https://airvpn.org/) ([GitHub](https://github.com/AirVPN)) - VPN berbayar, tersedia versi onion.
+- [Mullvad](https://mullvad.net/) ([GitHub](https://github.com/mullvad)) - VPN berbayar no-log tanpa port forwarding.
+- [IVPN](https://www.ivpn.net/) ([GitHub](https://github.com/ivpn)) - VPN berbayar no-log tanpa port forwarding.
+- [Firefox VPN](https://support.mozilla.org/en-US/kb/built-in-vpn) - VPN bawaan Firefox gratis 50GB bulanan.
+- [Nym](https://nym.com/) ([GitHub](https://github.com/nymtech/nym)) - VPN berbayar dengan mixnet 5-hop.
+- [RiseupVPN](https://riseup.net/en/vpn) ([GitHub](https://github.com/riseupnet)) - VPN gratis unlimited tanpa port forwarding.
+- [PrivadoVPN](https://privadovpn.com/freevpn) - VPN gratis 10GB bulanan.
+- [Bitmask](https://bitmask.net/) - VPN gratis unlimited, ada versi Android.
+
+## Server VPN
+
+- [WireGuard](https://www.wireguard.com/) ([Guide](https://www.wireguard.com/quickstart/)) - tunnel VPN modern yang cepat, ada Web UI wg-easy.
+- [Tailscale](https://tailscale.com/) - mesh WireGuard yang gampang, alternatifnya ada NetBird di netbird.io.
+- [Amnezia](https://amnezia.org/) ([GitHub](https://github.com/amnezia-vpn)) - server VPN yang gampang self-host.
+- [OpenVPN](https://openvpn.net/) - server VPN klasik yang battle-tested.
+- [WGDashboard](https://wgdashboard.dev/) ([GitHub](https://github.com/donaldzou/WGDashboard)) - panel WireGuard plus AmneziaWG.
+- [Twingate](https://www.twingate.com/) - tunnel zero trust access buat tim.
+- [Headscale](https://github.com/juanfont/headscale) - Tailscale self-hosted yang open source.
+- [Nebula](https://github.com/slackhq/nebula) - server VPN mesh, alternatifnya ada ZeroTier.
+- [IPsec VPN](https://github.com/hwdsl2/setup-ipsec-vpn) - server VPN IPsec sekali setup.
+- [Cloudflare Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/) - tunnel aplikasi alternatif VPN, ada versi cepat CF Quick Tunnels.
+- [Cloud WireGuard Guide](https://github.com/rajannpatel/Pi-Hole-on-Google-Compute-Engine-Free-Tier-with-Full-Tunnel-and-Split-Tunnel-Wireguard-VPN-Configs) - panduan WireGuard plus Pi-hole di Google Cloud.
+- [tinc](https://www.tinc-vpn.org/) ([GitHub](https://github.com/gsliepen/tinc)) - tunnel VPN mesh yang veteran.
+- [WireHole](https://github.com/IAmStoxe/wirehole) - WireGuard plus Pi-hole sekali jalan, ada Web UI.
+- [OpenConnect](https://gitlab.com/openconnect/openconnect) - SSL VPN dengan GUI tersedia.
+- [Pritunl](https://pritunl.com/) ([GitHub](https://github.com/pritunl/pritunl)) - server VPN dengan dashboard enterprise.
+- [Algo](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/) ([GitHub](https://github.com/trailofbits/algo)) - VPN cloud sekali deploy.
+- [SShuttle](https://sshuttle.readthedocs.io/en) ([GitHub](https://github.com/sshuttle/sshuttle)) - server VPN via SSH yang simpel.
+- [DSVPN](https://github.com/jedisct1/dsvpn) - server VPN simpel dead-simple.
+- [ocserv](https://ocserv.gitlab.io/www/index.html) - server SSL VPN yang open source.
+
+## Tools VPN
+
+- [VPN Binding Guide](https://wispydocs.pages.dev/torrenting/) - panduan bind VPN ke torrent client biar aman dari surat ISP.
+- [WireSock](https://wiresock.net/) - client split tunneling, alternatifnya ada Amnezia self-hosted dan TunnlTo.
+- [WG Tunnel](https://wgtunnel.com/) ([GitHub](https://github.com/wgtunnel)) - client WireGuard dan AmneziaWG.
+- [VPN Hotspot](https://github.com/Mygod/VPNHotspot) - share koneksi VPN via hotspot, perlu Android root.
+- [Gluetun](https://github.com/qdm12/gluetun) - jalanin VPN dalam Docker.
