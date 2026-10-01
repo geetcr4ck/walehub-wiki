@@ -39,6 +39,17 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 - [xPDFReader](https://www.xpdfreader.com/) - reader PDF minimalis buat Windows, macOS, dan Linux.
 - [PDF Arranger](https://github.com/pdfarranger/pdfarranger) - tool open source buat susun, gabung, dan potong halaman PDF di Windows dan Linux.
 
+### Konversi PDF
+
+- [Rare2PDF](https://rare2pdf.com/) - konversi file ke PDF, alternatifnya ada [online2pdf](https://online2pdf.com/) dan [2PDFConverter](https://www.2pdfconverter.com/).
+- [Tideflow](https://github.com/BDenizKoca/Tideflow-md-to-pdf) - konverter Markdown ke PDF, alternatif webnya ada [MD2PDF](https://md2pdf.netlify.app/).
+- [PDFconvert](https://docupub.com/pdfconvert/) - konverter file PDF buat ubah format bolak-balik.
+- [Marker](https://github.com/VikParuchuri/marker) - ubah PDF jadi Markdown yang rapi, enak buat arsip dokumen.
+- [PDFCrowd](https://pdfcrowd.com/) - konversi HTML ke PDF atau gambar via API, alternatifnya ada [TailWindPDF](https://tailwindpdf.com/) dan [wkhtmltopdf](https://wkhtmltopdf.org/).
+- [Issuu](https://issuu.com/) - ubah PDF jadi flipbook, brosur, dan halaman web yang cantik, plus ada [downloader](https://docdownloader.com/).
+- [WebToPDF](https://webtopdf.com/) - simpan halaman web jadi PDF, alternatif open source-nya ada [Percollate](https://github.com/danburzo/percollate).
+- [Dangerzone](https://dangerzone.rocks/) ([GitHub](https://github.com/freedomofpress/dangerzone)) - ubah PDF berbahaya jadi file aman dengan sandbox.
+
 ## Foto dan visual
 
 - [DOF Simulator](https://dofsimulator.net/) - simulator web buat hitung depth of field dan preview bokeh real-time dari kombinasi kamera, lensa, aperture, dan jarak subjek.
