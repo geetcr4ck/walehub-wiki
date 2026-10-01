@@ -11,6 +11,25 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [CompressO](https://compresso.codeforreal.com/) ([GitHub](https://github.com/codeforreal1/compressO)) - aplikasi desktop open-source lintas-platform untuk kompres video dan gambar offline berbasis FFmpeg, lengkap dengan batch, trim/crop/rotate, konversi format, dan tool GIF.
 
+## PDF
+
+> Catatan: tool client-side proses file langsung di browser jadi dokumen tidak diupload ke mana pun, sementara server-side upload file ke server mereka.
+
+- [ihatepdf](https://www.ihatepdf.cv/) - toolkit PDF client-side yang jalan full di browser, aman buat dokumen sensitif.
+- [BentoPDF](https://bentopdf.com/) ([GitHub](https://github.com/alam00000/bentopdf)) - toolkit PDF client-side yang open source, alternatifnya ada [File PDF](https://filepdf.net/).
+- [BreezePDF](https://breezepdf.com/) - toolkit PDF client-side yang ringan buat merge, split, dan kompres cepat.
+- [PDFKing](https://pdfking.app/) - toolkit PDF client-side dengan tampilan simpel buat olah PDF harian.
+- [PDFCraft](https://pdfcraft.devtoolcafe.com/) ([GitHub](https://github.com/PDFCraftTool/pdfcraft)) - toolkit PDF client-side yang open source buat convert dan edit ringan.
+- [itinypdf](https://itinypdf.com/) - toolkit PDF client-side yang minimalis buat tugas kecil cepat.
+- [PDFWix](https://pdfwix.com/) - toolkit PDF client-side buat merge, split, dan kompres tanpa upload.
+- [DigiPDF](https://digipdf.app/?lang=en_US) ([Codeberg](https://codeberg.org/ladigitale/digipdf)) - toolkit PDF client-side yang open source dan bebas iklan.
+- [Sejda](https://www.sejda.com/) - toolkit PDF server-side yang fiturnya paling lengkap buat edit serius.
+- [ILovePDF](https://www.ilovepdf.com/) - toolkit PDF server-side yang populer buat merge, split, dan kompres.
+- [PDFResizer](https://pdfresizer.com/) - tool server-side buat resize dan crop halaman PDF.
+- [PDF2Go](https://www.pdf2go.com/) - toolkit PDF server-side buat convert, kompres, dan proteksi file.
+- [DPDF](https://dpdf.com/) - toolkit PDF server-side yang simpel buat tugas cepat.
+- [Digiparser](https://www.digiparser.com/free-tools/pdf) - tool PDF server-side gratisan buat convert dan ekstrak data.
+
 ## Foto dan visual
 
 - [DOF Simulator](https://dofsimulator.net/) - simulator web buat hitung depth of field dan preview bokeh real-time dari kombinasi kamera, lensa, aperture, dan jarak subjek.
