@@ -37,7 +37,7 @@ Kumpulan tool AI yang kepakai bareng: chatbot gratis, setup ringan, dan trik bia
 - [Aider](https://aider.chat/) ([GitHub](https://github.com/Aider-AI/aider)) - terminal coding agent yang nyambung ke repo Git dan enak buat edit file cepat dari command line.
 - [Cline](https://cline.bot/) ([GitHub](https://github.com/cline/cline) / [Zoo Code](https://github.com/Zoo-Code-Org/Zoo-Code/)) - autonomous agent buat VS Code yang bisa baca, edit, dan jalanin perintah sendiri, alternatifnya ada Zoo Code.
 - [OpenHands](https://www.openhands.dev/) ([GitHub](https://github.com/All-Hands-AI/OpenHands)) - coding AI open source yang bisa planning, eksekusi perintah, dan beresin task software end to end.
-- [Cursor](https://rentry.co/FMHYB64#cursor) - coding AI berbasis editor yang jago autocomplete, refactor, dan ngobrol soal kode langsung di file.
+- [Cursor](https://cursor.com/) ([Reset](https://github.com/ultrasev/cursor-reset) / [VIP](https://github.com/kingparks/cursor-vip) / [Help](https://github.com/yuaotian/go-cursor-help)) - coding AI berbasis editor yang jago autocomplete, refactor, dan ngobrol soal kode langsung di file.
 - [GitWit](https://gitwit.dev/) - coding AI ringan buat bantu nulis, review, dan rapiin kode langsung dari browser.
 - [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) - harness coding AI open source dari DeepSeek buat jalanin agent coding dengan workflow sendiri.
 - [Google Antigravity](https://antigravity.google/) ([Add Skills](https://github.com/sickn33/antigravity-awesome-skills) / [Usage Tracker](https://open-vsx.org/extension/crsx/ag-usage)) - coding AI dari Google berbasis Gemini 3 dan Claude Opus 4.6 dengan limit reset mingguan, enak buat vibe coding.
