@@ -91,3 +91,88 @@ Kumpulan tool keamanan pilihan member: antivirus, scanner file, cek situs, plus 
 ## OSINT
 
 - [CTI Handbook](https://www.shenouda.nl/cti-handbook/) - panduan gratis soal OSINT dan threat intel dari dasar sampai cari kerja di bidangnya.
+
+## Privasi & OS
+
+- [Whonix](https://www.whonix.org/), [Qubes](https://www.qubes-os.org/), [Tails](https://tails.net/) ([GitHub](https://github.com/Whonix)) - trio OS fokus privasi buat isolasi, virtualisasi aman, dan sesi amnesik.
+- [W10Privacy](https://www.w10privacy.de/english-home/) - tool privasi Windows buat matikan telemetri dan fitur bocor data.
+- [Telemetry.md](https://gist.github.com/ave9858/a2153957afb053f7d0e7ffdd6c3dcb89) - daftar setting buat matikan telemetri Win 10 dan 11.
+- [Agent DVR](https://www.ispyconnect.com/), [Frigate](https://frigate.video/), [ZoneMinder](https://zoneminder.com/) ([GitHub](https://github.com/blakeblackshear/frigate)) - sistem kamera keamanan self-hosted buat rekam dan pantau CCTV lokal.
+- [go2rtc](https://github.com/AlexxIT/go2rtc) - bridge kamera plus stream manager ringan yang jalan self-hosted.
+- [Team Elite](https://www.te-home.net/) - koleksi software keamanan buat cek dan bersih sistem.
+- [YourDigitalRights](https://yourdigitalrights.org/) - minta organisasi hapus data pribadi lo dengan template siap kirim.
+- [Big Ass Data Broker Opt-Out List](https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List), [Serus](https://www.serus.ai/), [Data Broker Watch](https://databrokerswatch.org/) - daftar link opt-out broker data biar jejak pribadi berkurang.
+- [DataRequests](https://www.datarequests.org/) ([GitHub](https://github.com/datenanfragen)) - generator request GDPR buat minta salinan atau hapus data.
+- [Surfer Protocol](https://github.com/Surfer-Org/Protocol) - exporter data user multi-platform yang open source.
+- [GnuPG](https://gnupg.org/) ([Installer](https://www.gpg4win.org/)) - enkripsi data dan komunikasi, kelola key praktis dengan gpg-tui di terminal.
+- [PrivateBin](https://privatebin.net/) - kirim pesan meledak-sendiri yang terenkripsi, alternatifnya ada PrivNote, OTS, SafeNote, Burn.Link, s.cr, Yopass, Hemmelig, Burn My Note, dan OneTimeSecret.
+- [Portable Secret](https://alcazarsec.github.io/portable-secret/) ([GitHub](https://github.com/alcazarsec/portable-secret)) - bikin file HTML mandiri yang dekrip lokal di browser.
+- [Forensic Focus](https://www.forensicfocus.com/forums/) - forum diskusi forensik digital buat belajar dan tanya jawab.
+- [SurveillanceWatch](https://www.surveillancewatch.io/) - peta koneksi perusahaan surveilans biar tahu siapa di balik siapa.
+- [Atlas of Surveillance](https://www.atlasofsurveillance.org/) - peta teknologi surveilans polisi di berbagai daerah.
+- [Sparrow Map](https://map.sparrowmap.com/) - peta kendaraan polisi plus jaringan kamera komunitas.
+- [DeFlock](https://deflock.org/) ([GitHub](https://github.com/FoggedLens/deflock)) - peta kamera ALPR komunitas, alternatifnya ada ALPR Watch, FlockHopper, Flock map, dan Panopti.
+- [EyesOnFlock](https://eyesonflock.com/) - database tracking surveilans Flock yang bisa dijelajah publik.
+- [Have I Been Flocked](https://haveibeenflocked.com/) - cek plat nomor lo pernah kena tag Flock atau tidak.
+- [ICE Map](https://www.icemap.dev/) - info dan peta aktivitas ICE, alternatifnya ada People Over Papers.
+- [If An Agent Knocks](https://docs.google.com/document/d/176Yds1p63Q3iaKilw0luChMzlJhODdiPvF2I4g9eIXo/) - praktik terbaik bila dihubungi agen biar tetap aman secara hukum.
+
+## Panduan privasi
+
+- [Hitchhiker's Guide](https://anonymousplanet.net/) ([GitHub](https://github.com/Anon-Planet/thgtoa)) - panduan anonimitas online yang lengkap dan praktis.
+- [OPSEC Bible](https://www.privacydefence.org/opsec/bibleprivacy/opsec/index.html) - panduan anonimitas mendalam yang juga tersedia versi onion.
+- [Privacy Guides](https://www.privacyguides.org/) ([Discuss](https://discuss.privacyguides.net/)) - panduan edukasi privasi plus rekomendasi tool tepercaya.
+- [The New Oil](https://thenewoil.org/) ([GitHub](https://github.com/tnonate/thenewoil)) - panduan edukasi privasi dengan bahasa santai buat pemula.
+- [No Trace](https://www.notrace.how/) - panduan edukasi privasi yang juga tersedia versi onion.
+- [Awesome Privacy](https://awesome-privacy.xyz/) ([GitHub](https://github.com/lissy93/awesome-privacy)) - direktori app privasi, alternatifnya ada Awesome Security Hardening dan pluja Awesome Privacy.
+- [Consumer Rights Wiki](https://consumerrights.wiki/) ([Extension](https://github.com/FULU-Foundation/CRW-Extension)) - dokumentasi praktik rugikan konsumen dari berbagai perusahaan.
+- [Surveillance Self-Defense](https://ssd.eff.org/) - panduan edukasi dari EFF buat lawan surveilans digital.
+- [Digital Defense](https://digital-defense.io/) ([GitHub](https://github.com/lissy93/personal-security-checklist)) - checklist privasi pribadi biar setting keamanan rapi.
+- [Defensive Computing Checklist](https://defensivecomputingchecklist.com/) - panduan edukasi keamanan dasar yang gampang diikuti.
+- [Whonix Wiki](https://www.whonix.org/wiki) - panduan edukasi privasi plus forum diskusi aktif.
+- [Kicksecure Wiki](https://www.kicksecure.com/wiki) - panduan edukasi keamanan plus forum diskusi aktif.
+- [OPSEC Guide](https://whos-zycher.github.io/opsec-guide/) - panduan edukasi OPSEC yang ringkas dan langsung praktik.
+- [PrivSec](https://privsec.dev/) ([GitHub](https://github.com/PrivSec-dev)) - panduan edukasi privasi dengan rekomendasi tool jelas.
+- [Hostux](https://hostux.net/en/) ([Source Code](https://git.hostux.net/hostux.net/hostux.network)) - tool privasi buat cek dan perkuat jejak digital.
+- [Privacy Settings](https://github.com/StellarSand/privacy-settings) - panduan setting privasi Android dan web yang rapi.
+- [Privacy Not Included](https://www.mozillafoundation.org/en/privacynotincluded/) - rating privasi produk dari Mozilla biar belanja lebih sadar.
+- [EncryptedList](https://encryptedlist.xyz/) - daftar layanan dan app terenkripsi yang gampang dijelajah.
+- [Awesome Vehicle Security](https://github.com/jaredthecoder/awesome-vehicle-security) - resource keamanan kendaraan yang open source.
+
+## Keamanan jaringan
+
+- [Safing Portmaster](https://safing.io/) ([GitHub](https://github.com/safing)) - monitor jaringan plus resolver DNS dan firewall dalam satu app.
+- [DNSLeakTest](https://dnsleaktest.com/) - tes kebocoran DNS biar VPN lo ketahuan bocor atau tidak.
+- [I2P](https://i2p.net/) - lapisan jaringan privat terenkripsi, client alternatifnya ada i2pd di i2pd.website.
+- [Freenet](https://freenet.org/) ([GitHub](https://github.com/freenet/web)) - web P2P terdesentralisasi buat hosting anti sensor.
+- [Hyphanet](https://www.hyphanet.org/) ([GitHub](https://github.com/hyphanet)) - web P2P terdesentralisasi buat berbagi file privat.
+- [RustNet](https://github.com/domcyrus/rustnet) - monitor jaringan TUI yang ringan dan open source.
+- [Simplewall](https://github.com/henrypp/simplewall) - firewall Windows ringan yang open source tanpa ribet.
+- [Fort](https://github.com/tnodir/fort) - firewall Windows yang open source dan gampang diatur.
+- [OPNsense](https://opnsense.org/) ([GitHub](https://github.com/opnsense)) - firewall open source buat jaga jaringan rumah atau kantor.
+- [WFC](https://www.binisoft.org/wfc.php) - firewall Windows simpel buat atur koneksi per app.
+
+## Privasi Android
+
+- [Awesome Android Security](https://github.com/ashishb/android-security-awesome) - resource keamanan Android yang open source dan lengkap.
+- [Triage](https://tria.ge/) - scan APK dan URL dengan sandbox, alternatifnya ada Hybrid Analysis.
+- [Rethink DNS](https://rethinkdns.com/) ([GitHub](https://github.com/celzero/rethink-app)) - firewall Android no-root, alternatifnya ada ShizuWall, AFWall+ buat root, dan Karma.
+- [URLCheck](https://github.com/TrianguloY/URLCheck) - pembersih URL Android, alternatifnya ada Tarnhelm, LinkSheet, dan Untracker.
+- [Exodus](https://reports.exodus-privacy.eu.org/en/) - database tracker di app Android biar tahu app mata-mata.
+- [Amarok](https://github.com/deltazefiro/Amarok-Hider) - sembunyikan file dan app, alternatifnya ada Aer dan SafeSpace.
+- [InviZible](https://invizible.net/en/) ([GitHub](https://github.com/Gedsh/InviZible)) - VPN hybrid Android dengan Tor, DNSCrypt, dan I2P.
+- [Intra](https://getintra.org/) - app DNS terenkripsi buat Android yang simpel.
+- [PermissionManagerX](https://github.com/mirfatif/PermissionManagerX) - manager izin app Android yang detail dan open source.
+- [AppLock](https://github.com/aload0/AppLock) - kunci app open source tanpa root.
+- [Orbot](https://orbot.app/en/) - app proxy Tor buat Android biar trafik anonim.
+- [DroidFS](https://forge.chapril.org/hardcoresushi/DroidFS) - file manager terenkripsi buat simpan file sensitif.
+- [Network Survey](https://github.com/christianrowlands/android-network-survey) - scanner jaringan seluler buat Android yang open source.
+- [TrackerControl](https://trackercontrol.org/) ([GitHub](https://github.com/TrackerControl/tracker-control-android)) - monitor dan kontrol tracker, alternatifnya ada Privacy Guard.
+- [LibChecker](https://github.com/LibChecker/LibChecker) - lihat library pihak ketiga di dalam app Android.
+- [Sapio](https://github.com/jonathanklee/Sapio) - scan app buat ketahuan dependensi Google di dalamnya.
+- [NetGuard](https://www.netguard.me/) ([GitHub](https://github.com/M66B/NetGuard)) - blokir internet per app tanpa root.
+- [Open SSTP Client](https://github.com/kittoku/Open-SSTP-Client) - client SSTP buat Android yang open source.
+- [SimpleLogin](https://github.com/simple-login/Simple-Login-Android) - forward email alias, alternatifnya ada AnonAddy.
+- [Keyoxide](https://codeberg.org/Berker/keyoxide-flutter) - verifikasi identitas kriptografi terdesentralisasi di Android.
+- [HMA-OSS](https://github.com/frknkrc44/HMA-OSS) - sembunyikan applist tanpa root, alternatifnya ada Hide My Applist buat root.
+- [JustUseApp](https://justuseapp.com/) - review langganan app biar tidak kejebak biaya siluman.
