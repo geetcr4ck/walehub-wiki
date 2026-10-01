@@ -102,3 +102,13 @@ Kumpulan tool blokir iklan pilihan member: adblocker browser, filter, dan DNS ad
 - [Tunnelblick](https://tunnelblick.net/) - tunnel VPN open source, alternatif modernnya ada [Passepartout](https://partout.io/passepartout/).
 - [MailTrackerBlocker](https://apparition47.github.io/MailTrackerBlocker/) - client email berbasis privasi yang blokir tracker.
 - [Status](https://status.app/) - client chat terenkripsi yang open source.
+
+## Adblock Android
+
+- [Rethink DNS](https://rethinkdns.com/app) - DNS adblocker buat Android yang open source, alternatifnya ada [DNSNet](https://github.com/t895/DNSNet) dan [personalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/).
+- [AdGuard Android](https://adguard.com/en/adguard-android/overview.html) ([GitHub](https://github.com/AdguardTeam/AdguardForAndroid)) - app adblock Android yang powerful, versi browser saja tersedia bila tidak mau install app.
+- [uBlock Origin](https://github.com/gorhill/uBlock) - adblocker yang paling ampuh di Android bila dipasang via Firefox.
+- [Re-Malwack](https://zg.is-a.dev/re-malwack) ([GitHub](https://github.com/ZG089/Re-Malwack)) - app adblock buat Android yang sudah root.
+- [AdAway](https://adaway.org/) ([GitHub](https://github.com/AdAway/AdAway)) - app adblock open source buat Android yang legendaris.
+- [bindhosts](https://github.com/bindhosts/bindhosts) - adblock systemless buat Android rooted tanpa ubah partisi sistem.
+- [PrivateDNSAndroid](https://github.com/karasevm/PrivateDNSAndroid) - switcher DNS privat biar gampang ganti provider DNS di Android.
