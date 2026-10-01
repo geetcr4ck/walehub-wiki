@@ -11,7 +11,7 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [CompressO](https://compresso.codeforreal.com/) ([GitHub](https://github.com/codeforreal1/compressO)) - aplikasi desktop open-source lintas-platform untuk kompres video dan gambar offline berbasis FFmpeg, lengkap dengan batch, trim/crop/rotate, konversi format, dan tool GIF.
 
-## PDF
+## PDF online
 
 > Catatan: tool client-side proses file langsung di browser jadi dokumen tidak diupload ke mana pun, sementara server-side upload file ke server mereka.
 
@@ -29,6 +29,15 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 - [PDF2Go](https://www.pdf2go.com/) - toolkit PDF server-side buat convert, kompres, dan proteksi file.
 - [DPDF](https://dpdf.com/) - toolkit PDF server-side yang simpel buat tugas cepat.
 - [Digiparser](https://www.digiparser.com/free-tools/pdf) - tool PDF server-side gratisan buat convert dan ekstrak data.
+
+### PDF offline
+
+- [Stirling PDF](https://stirling.com/) ([GitHub](https://github.com/Stirling-Tools/Stirling-PDF)) - toolkit PDF offline open source buat Windows, macOS, dan Linux yang fiturnya setara web.
+- [PDF24](https://www.pdf24.org/) - toolkit PDF gratis buat Windows yang bisa offline, plus versi web bila perlu.
+- [PDF4QT](https://jakubmelka.github.io/) ([GitHub](https://github.com/JakubMelka/PDF4QT)) - reader dan editor PDF open source buat Windows dan Linux yang ringan.
+- [Foxit](https://www.foxit.com/pdf-reader/) - reader PDF lintas platform yang kencang, hindari installer versi bundle yang bawa software tambahan.
+- [xPDFReader](https://www.xpdfreader.com/) - reader PDF minimalis buat Windows, macOS, dan Linux.
+- [PDF Arranger](https://github.com/pdfarranger/pdfarranger) - tool open source buat susun, gabung, dan potong halaman PDF di Windows dan Linux.
 
 ## Foto dan visual
 
