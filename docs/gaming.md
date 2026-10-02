@@ -34,6 +34,25 @@ Kumpulan link gaming pilihan member: referensi main, tools, dan situs unduh game
 - [Vanya Games](https://vanya-games.site/) - repack via unduh langsung yang simpel.
 - [Dyren Repacks](https://repacksby.dyren.lol/cb.html) - repack via unduh dan torrent.
 
+## Launcher game
+
+> Catatan: beberapa launcher ini bisa unduh atau torrent game langsung, jadi pasang VPN dan bind ke client torrent kamu.
+
+- [Playnite](https://playnite.link/) ([Extensions](https://playnite.link/addons.html), [2](https://github.com/darklinkpower/PlayniteExtensionsCollection) / [GitHub](https://github.com/JosefNemec/Playnite/)) - pustaka dan launcher game serbaguna dengan dukungan ekstensi.
+- [Hydra](https://hydralauncher.gg/) ([Plugins](https://library.hydra.wiki/) / [Themes](https://hydrathemes.shop/) / [GitHub](https://github.com/hydralauncher/hydra)) - launcher sekaligus downloader dan torrent client dengan dukungan achievement.
+- [Ascendara](https://ascendara.app/) ([GitHub](https://github.com/Ascendara/ascendara)) - pustaka dan launcher game sekaligus downloader.
+- [Project GLD](https://y0urd34th.github.io/Project-GLD/) ([GitHub](https://github.com/Y0URD34TH/Project-GLD/)) atau [GOG Galaxy](https://www.gog.com/galaxy) - launcher dan pustaka game alternatif GOG Galaxy.
+- [Kryoto Desktop](https://kryo.to/desktop) ([GitHub](https://github.com/kyrotooooo/kryoto-desktop)) - launcher sekaligus downloader game yang ringan.
+- [Fit Launcher](https://github.com/CarrotRub/Fit-Launcher/) - launcher tidak resmi sekaligus torrent client dan downloader.
+- [Launchbox](https://www.launchbox-app.com/) - pustaka dan launcher khusus game retro dan konsol.
+- [GameHUB Launcher](https://www.deviantart.com/not-finch/art/GameHUB-launcher-2-for-Rainmeter-785369648) ([GitHub](https://github.com/callmeEthan/GameHUB2)) - launcher game berbasis Rainmeter.
+- [OpenGamepadUI](https://github.com/ShadowBlip/OpenGamepadUI) - launcher native buat kontrol gamepad.
+- [TwintailLauncher](https://twintaillauncher.app/) ([GitHub](https://github.com/TwintailTeam/TwintailLauncher)) - launcher sekaligus mod engine buat game anime F2P.
+- [UnderTaker141](https://github.com/AbdelrhmanNile/UnderTaker141) - launcher game Johncena141.
+- [JackboxUtility](https://github.com/JackboxUtility/JackboxUtility) - launcher khusus buat main Jackbox Games.
+- [Starward](https://github.com/Scighost/Starward) - launcher khusus game HoYoverse.
+- [GameVault](https://gamevau.lt) ([GitHub](https://github.com/Phalcode/gamevault-app)) - platform gaming self-hosted buat koleksi sendiri.
+
 ## Tools & referensi
 
 - [VGMaps](https://vgmaps.de/) - arsip peta game lama dan baru buat cek jalur, lokasi rahasia, atau nostalgia.
