@@ -56,6 +56,7 @@ Kumpulan tool AI yang kepakai bareng: chatbot gratis, setup ringan, dan trik bia
 - [cmux](https://cmux.com/) ([GitHub](https://github.com/manaflow-ai/cmux)) - terminal coding agent plus emulator macOS yang cocok buat multitasking coding ala agent.
 - [Poolside](https://docs.poolside.ai/api/overview) - coding AI API buat bangun fitur dan workflow coding otomatis di aplikasi sendiri.
 - [getdesign.md](https://getdesign.md/) - kumpulan design system yang AI-ready biar hasil coding UI lebih rapi dan konsisten.
+- [Cartethyia](https://github.com/risunCode/Cartethyia/tree/dev) - gateway self-hosted yang satukan banyak akun AI provider di satu endpoint OpenAI/Anthropic buat OpenCode, Claude Code, Codex, dan Cline, lengkap routing cerdas, health tracking, retry, kuota, dan debug request.
 
 ## AI Agents
 

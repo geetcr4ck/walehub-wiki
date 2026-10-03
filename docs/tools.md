@@ -53,10 +53,12 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 ## Foto dan visual
 
 - [DOF Simulator](https://dofsimulator.net/) - simulator web buat hitung depth of field dan preview bokeh real-time dari kombinasi kamera, lensa, aperture, dan jarak subjek.
+- [Photon Studio](https://tenzen.studio/photon/) - photo editor desktop gratis mirip Photoshop yang buka PSD/PSB ber-layer utuh, dengan AI selection offline dan dukungan RAW, full lokal tanpa akun.
 
 ## Streaming
 
 - [Anikage](https://anikage.cc/) - situs streaming anime gratis buat nonton online, lengkap dengan trending, rilisan musiman, dan film.
+- [Dexter](https://dexter.pw/) - situs streaming film dan series hingga 4K bebas iklan dengan perbaikan otomatis link rusak.
 
 ## Karier & CV
 
@@ -66,6 +68,8 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 
 - [Midas QR](https://midasqr.is-local.org/) ([GitHub](https://github.com/Jimm144/midas-qr)) - bikin QR code yang bisa diatur warna dan gaya, cocok buat link atau info WiFi.
 - [VidhyaGen](https://vidhyagen.com/) - kumpulan tool web kecil buat olah gambar, PDF, dan teks dalam satu situs.
+- [InBrowser App](https://inbrowser.app/) - koleksi 214 tools web gratis open-source kayak formatter JSON, generator QR/UUID, dan encoder Base64 yang jalan full di browser tanpa upload dan bisa offline sebagai PWA.
+- [Paster](https://paster.net/) - pastebin ringan buat tempel teks atau kode jadi satu link, dengan multi-syntax highlighting, render Markdown, dan edit langsung di editor.
 
 ## Launcher
 
@@ -98,6 +102,8 @@ Kumpulan web tools yang sering kepakai harian: unduh media, bikin QR, sampai buk
 - [termscp](https://termscp.rs/) ([GitHub](https://github.com/veeso/termscp)) - transfer file dari TUI terminal yang enak buat yang betah di command line.
 - [WinSCP](https://winscp.net/eng/index.php) - client FTP klasik khusus Windows.
 - [robocopy](https://learn.microsoft.com/windows-server/administration/windows-commands/robocopy) ([WebUI](https://ar-puuk.github.io/robocopy-gui)) - panduan transfer file bawaan Windows yang andal buat copy massal.
+- [0807](https://0807.st/) - share file simpel tinggal drag maks 10GB jadi link tanpa akun dan iklan, dengan auto-delete, batas download, password, dan blokir executable.
+- [D-LAN](https://github.com/Ummon/D-LAN) - share file dan folder di LAN secara terdesentralisasi tanpa server, lengkap discovery otomatis, pencarian terindeks, distributed transfer, dan chat global.
 
 ### P2P
 
