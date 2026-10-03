@@ -6,7 +6,7 @@ hero:
   text: Wiki
   tagline: "Kumpulan link pilihan member Walehub, tersimpan rapi dalam satu wiki."
   image:
-    src: /images/walehub-transparent.webp
+    src: /images/original-mascot.webp
     alt: Logo Walehub Wiki
   actions:
     - theme: alt
